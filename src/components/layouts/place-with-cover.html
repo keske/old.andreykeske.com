@@ -1,0 +1,31 @@
+<a href="#/places/{{place.year}}/{{place.month}}/{{place.city}}" class="{{place.class}}">
+
+	<div class="data big-type year-{{place.year}}">
+	<!-- ng-class="{'big-type': order == '-year'}" -->
+
+		<p class="city">
+			{{place.city}}
+			<span class="new" ng-if="showNewLabel(place.date);">
+				New
+			</span>
+		</p>
+
+		<p class="date">
+			<span class="country">
+				{{place.country}}
+			</span>
+			<br />
+			{{showStartDateMonth(place.start, place.end)}}
+			<span ng-if="place.end">&mdash; {{place.end}}</span>
+			<span ng-hide="order = '-year'">{{place.year}}</span>
+		</p>
+	
+	</div>
+
+	<span class="img-wrap">
+		<img src="../assets/images/{{place.year}}/{{place.month}}/{{place.city | capitalize}}/thumb.jpg" 
+			alt="{{place.city}} | {{place.month}} | {{place.year}}" 
+			ng-show="mode == 'card'">
+	</span>
+
+</a>

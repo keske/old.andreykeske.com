@@ -1,0 +1,13 @@
+.header-image {
+	overflow: hidden;
+	height: 300px;
+
+	&.large {
+		height: 800px;
+	}
+
+	&.medium {
+		height: 400px;
+		display: none;
+	}
+}

@@ -1,0 +1,47 @@
+<div class="container places">
+
+	<div class="sub-header">
+        <h1>
+            Travel stories
+        </h1>
+    </div>
+
+	<div class="row">
+
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 visited-info">
+			<small>
+				The most visited city is a {{mostVisitedCity[0]}}.
+				Total cities: {{visitedCitiesLength}}, countries: {{visitedCountriesLength}}.
+			</small>
+		</div>
+		
+		<div filter></div>
+
+		<div ng-repeat="place in places | orderBy: [order, '-date']" 
+			class="city-thumb col-xs-12 col-sm-12"
+			ng-class="{'col-md-6 col-lg-6': mode == 'card', 
+				'hide': !place.cover && mode == 'card',
+				'col-md-12 col-lg-12': mode == 'text'}">
+
+			<h5 class="year-header" ng-show="createHeader(place.year);">
+				{{place.year}}
+			</h5>
+
+			<span ng-if="place.cover" class="view-as-{{mode}}">
+
+				<span place-with-cover></span>
+
+			</span>
+
+			<span ng-show="mode != 'card' && !place.cover" class="view-as-text">
+
+				<span place-without-cover></span>
+
+			</span>
+
+
+		</div><!-- city card mode -->
+
+	</div>
+
+</div>

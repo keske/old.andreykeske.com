@@ -1,0 +1,62 @@
+<div class="container work-page">
+  <div class="row">
+    
+    <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-md-offset-2 col-lg-offset-2">
+
+      <h1>Police Siren Alarm animation in OS X Finder</h1>
+
+      <!-- <p>
+        I really love OS X and every day i get an inspiration working with this system (<a href="#{}">The Catch, </a>
+        <a href="#{}">Mac OS UI Games, </a>
+        <a href="#{}">Friday Dock</a>)
+      </p> -->
+
+      <p>
+        As you know the OS X gives the opportunity to set image folder as background and set colour labels for folders and files. Also that can be done from Terminal. What if we make animation from this labels?
+      </p>
+
+      <h2>How it's works</h2>
+
+      <p>
+        So, how to set it up: open index.html in your browser, it has Javascript sending request to cmd.php every 2.5 seconds, which actually does the command. The command is pretty simple and looks like ./label.sh [color] [file].
+        File label.sh sets the Finder labels.
+      </p>
+
+      <div class="responsive-container">
+        <iframe width="960" height="720" src="//www.youtube.com/embed/WrUCOit8adQ" frameborder="0" allowfullscreen></iframe>
+      </div>
+
+      <h2>Repeat this effect on your computer</h2>
+
+      <ul>
+        <li>
+          <a href="assets/images/works/police-car/police.zip">Download (2.1 Mb)</a> archive and unzip;
+        </li>
+        <li>
+          Move the police folder in <a href="http://httpd.apache.org/docs/2.2/mod/core.html#documentroot">«DocumentRoot»</a> folder;
+        </li>
+        <li>
+         Open the police folder where there is two folders with «,,,,,,,,,,» and «,,,,,,,,,,,». Set image as background, press ⌘J. Select police.jpg;
+        </li>
+        <li>
+         Start http server;
+        </li>
+        <li>
+         Open in Finder the police folder and change view option to «Show items as icons» (Press ⌘1);
+        </li>
+        <li>
+         In the browser open your link to the police folder (for example: http://localhost/police);
+        </li>
+        <li>
+         And last, press Alt+Tab to show finder window with our police folder.
+        </li>
+      </ul>
+
+      <i>System requirements: OS X, Apache, PHP</i>
+
+    </div><!-- col -->
+
+  </div><!-- row -->
+</div><!-- container -->
+
+<div nav-between-works></div>

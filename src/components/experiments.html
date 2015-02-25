@@ -1,0 +1,42 @@
+<div class="container">
+
+	<div class="sub-header">
+        <h1>
+            Experiments
+        </h1>
+    </div>
+
+	<div class="row">
+
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 visited-info">
+			<small>
+				Some times I do some experiments between art, programming and design.
+			</small>
+		</div>
+
+	</div>
+
+	<div class="row work-card" ng-repeat="work in works">
+
+		<a href="#/experiment-works/{{work.link}}">
+			<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 
+				col-md-offset-{{getOffset()}} col-lg-offset-{{getOffset()}}">
+
+				<img src="{{work.img}}" alt="{{work.title}}">
+			</div>
+
+			<div class="col-xs-9 col-sm-9 col-md-5 col-lg-5">
+			
+				<h2>
+					{{work.title}}
+				</h2>
+				
+				<p>
+					{{work.info}}
+				</p>
+			</div>
+		</a>
+
+	</div>
+
+</div>

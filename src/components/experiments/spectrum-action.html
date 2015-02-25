@@ -1,0 +1,80 @@
+<!doctype html>
+<html class="no-js" ng-app="whenihave">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Spectrum</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+  </head>
+  <body> 
+
+    <canvas id="fft" height="0"></canvas>
+
+    <div class="player">
+      <p>
+        <span class="liga play">Ù</span>
+        <span class="liga pause">Ü</span>
+      </p>
+    </div>
+
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+
+    <!-- Dancer.js -->
+    <!-- <script src="//www.google-analytics.com/ga.js"></script>
+    <script id="twitter-wjs" src="http://platform.twitter.com/widgets.js"></script>
+    <script id="facebook-jssdk" src="//connect.facebook.net/en_US/all.js#xfbml=1&amp;appId=517641041595103"></script> -->
+
+    <script src="/assets/images/works/spectrum/js/dancer.js"></script>
+    <script src="/assets/images/works/spectrum/js/support.js"></script>
+    <script src="/assets/images/works/spectrum/js/kick.js"></script>
+    <script src="/assets/images/works/spectrum/js/adapterWebkit.js"></script>
+    <script src="/assets/images/works/spectrum/js/adapterMoz.js"></script>
+    <script src="/assets/images/works/spectrum/js/adapterFlash.js"></script>
+    <script src="/assets/images/works/spectrum/js/fft.js"></script>
+
+    <!-- Demo stuff -->
+    <script src="/assets/images/works/spectrum/js/player.js"></script>
+
+    <script type="text/javascript">
+
+        window.location.hash = '';
+
+        var spectrum;
+        var _hashtag = '•'
+
+        function _main() {
+
+          dancer.bind('update', function() {
+
+            spectrum = dancer.getFrequency(1, 255);
+
+            for ( var i = 1; i < ((-spectrum * 5).toFixed(3) * -200).toFixed(0); i++ ) {
+
+              _hashtag += _hashtag;
+
+              window.location.hash = _hashtag;
+
+            }
+
+            _hashtag = '•';
+            window.location.hash = '';
+
+          })
+
+        }
+
+        $('.play').bind('click', function() {
+          dancer.play();
+        });
+
+        $('.pause').bind('click', function() {
+          dancer.pause();
+        });
+
+    </script>
+
+  </body>
+</html>

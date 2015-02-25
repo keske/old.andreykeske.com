@@ -1,0 +1,45 @@
+<div class="container work-page">
+  <div class="row">
+    
+    <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-md-offset-2 col-lg-offset-2">
+
+      <h1>Key hole</h1>
+
+      <p>
+        I really love snooping and you?
+        <br />
+        Move mouse cursor over key hole.
+      </p>
+
+      <div class="keyhole-girl keyhole-girl-center">
+        <img src="/assets/images/works/research/keyhole/girl.png" alt="Girl">
+      </div>
+
+      <div class="keyhole keyhole-center">
+        <img src="/assets/images/works/research/keyhole/keyhole.png" alt="Keyhole">
+      </div>
+
+    </div><!-- col -->
+
+  </div><!-- row -->
+</div><!-- container -->
+
+<div nav-between-works></div>
+
+<script type="text/javascript">
+
+  keyholePosition = function() {
+    $('.keyhole-girl').css('marginLeft', $('.container').width() / 2 - $('.keyhole-girl').width() / 2 - 18);
+    $('.keyhole').css('marginLeft', $('.container').width() / 2 - $('.keyhole').width() / 2 - 18);
+  }
+
+  $('.keyhole').mousemove(function(e) {
+    var x = (e.pageX - $(this).offset().left) / ($(this).innerWidth()) * 100,
+        y = (e.pageY - $(this).offset().top) / ($(this).innerHeight()) * 100;
+        
+    $('.keyhole-girl img')
+      .css('marginLeft', x * -0.9)
+      .css('marginTop', y * -0.1);
+  });
+
+</script>

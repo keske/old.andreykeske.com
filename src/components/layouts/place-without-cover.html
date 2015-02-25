@@ -1,0 +1,18 @@
+<div class="data no-cover-no-link year-{{place.year}} big-type">
+	<!-- ng-class="{'big-type': order == '-year'}"> -->
+
+	<p class="city">
+		{{place.city}}
+	</p>
+
+	<p class="date">
+		<span class="country">
+			{{place.country}}
+		</span>
+		<br />
+		{{showStartDateMonth(place.start, place.end)}}
+		<span ng-if="place.end">&mdash; {{place.end}}</span>
+		<span ng-hide="order = '-year'">{{place.year}}</span>
+	</p>
+
+</div>

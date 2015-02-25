@@ -1,0 +1,37 @@
+<div class="container work-page">
+  <div class="row">
+    
+    <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-md-offset-2 col-lg-offset-2">
+
+      <h1>The shadows of the window</h1>
+
+      <p>
+        I continue research and experiments with Mac OS interface. Now I work with shadows of the window.
+        <br />
+        The slider controls the size of the shadow.
+      </p>
+
+      <h4>
+        <a href="#" onclick="openWindows();">Let's try this effect</a>
+      </h4>
+
+      <div class="responsive-container">
+        <iframe width="960" height="720" src="//www.youtube.com/embed/gPrZHOOw8R0" frameborder="0" allowfullscreen></iframe>
+      </div>
+
+    </div><!-- col -->
+
+  </div><!-- row -->
+</div><!-- container -->
+
+<div nav-between-works></div>
+
+<script type="text/javascript" src="/assets/images/works/research/shadow/slider/js/sh.js"></script>
+
+<script type="text/javascript">
+  openWindows = function() {
+
+    _obj.push('_obj'+0);
+    _obj[0] = window.open("/assets/images/works/research/shadow/slider/mainWindow.html", "windows"+0, "width="+_windows[0][0]+", height="+_windows[0][1]+", left=10, top=10, status=no, toolbar=no, menubar=no");
+  }
+</script>

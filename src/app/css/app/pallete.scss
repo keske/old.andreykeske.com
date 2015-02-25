@@ -1,0 +1,36 @@
+// Usefull site for colorus: http://colours.neilorangepeel.com/ Thanks!
+
+// *****************************************************************************
+// Common colors
+// *****************************************************************************
+
+$black: #000;
+$gray: #999;
+$white: #FFF;
+
+$red: #DC143C;
+$blue: #4169E1;
+$purple: #BA55D3;
+$pink: #BA55D3;
+$green: #32CD32;
+
+// *****************************************************************************
+// User Interface
+// *****************************************************************************
+@mixin ui-active() {
+	@include light();
+
+	color: $gray;
+
+	cursor: pointer;
+
+	&:hover {
+		color: $black;
+	}
+
+	&.active {
+		@include normal();
+
+		color: $black;
+	}
+}

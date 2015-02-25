@@ -1,0 +1,45 @@
+<!-- view mode -->
+<div class="col-xs-3 col-sm-3 col-md-1 col-lg-1 filter">
+	<div 
+		ng-click="mode = 'card'"
+		ng-class="{'active': mode == 'card'}">
+		☷
+	</div>
+
+	<div 
+		ng-click="mode = 'text'"
+		ng-class="{'active': mode == 'text'}">
+		☰
+	</div>
+</div>
+
+<!-- order -->
+<div class="col-xs-5 col-sm-5 col-md-2 col-lg-2 filter">
+	<div 
+		ng-click="order = '-year'"
+		ng-class="{'active': order == '-year'}">
+			Time
+		</div>
+
+	<div 
+		ng-click="order = 'city'"
+		ng-class="{'active': order == 'city'}">
+			A-Z
+		</div>
+
+	<div 
+		ng-click="order = 'country'"
+		ng-class="{'active': order == 'country'}">
+			Country
+		</div>
+</div>
+
+<!-- tags -->
+<div class="col-xs-4 col-sm-4 col-md-9 col-lg-9 filter filter-tags">
+	☀
+	☁
+	☂
+	☸
+	☻
+	✈
+</div>

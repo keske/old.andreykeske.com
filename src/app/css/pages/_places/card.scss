@@ -1,0 +1,199 @@
+.visited-info {
+	@include light();
+	@include open-sans();
+
+	font-style: italic;
+
+	font-size: 12px;
+	line-height: 12px;
+}
+
+// Vars
+$thumb-height-desktop: 600px; 
+$thumb-height-large-desktop: 590px; 
+
+// Paragraph style
+@mixin paragraph() {
+	
+	// Typography, size, font-weight
+	.data {
+		
+		&.no-cover-no-link {
+			color: $gray;
+		}
+
+		p.city {
+			@include serif-caption();
+			@include light();
+
+			$size: 38px;
+
+			font-size: $size;
+			line-height: $size;
+		}
+
+		p.date {
+			@include open-sans();
+			@include light();
+
+			span.country {
+				@include normal();
+			}
+		}
+	}
+}
+
+// City thumb card
+.city-thumb {
+	
+	@include paragraph();
+
+	span.new {
+		font-size: 10px;
+		
+		color: #FFF;
+		background: $green;
+
+		padding: 1px 4px;
+		position: relative;
+
+		@include open-sans();
+
+		border-radius: 2px;
+
+		top: -21px;
+	}
+
+	// View as card (default)
+	.view-as-card {
+
+		transition: 0s;
+
+		border-radius: 2px;
+
+		overflow: hidden;
+
+		// Set height size for desktop
+		@media (#{$desktop}) {
+			height: $thumb-height-desktop;
+		}
+		
+		// Set height size for large desktop
+		@media (#{$large-desktop}) {
+			height: $thumb-height-large-desktop;
+		}
+
+		a {
+			color: $black;
+
+			&:hover {
+				color: $blue;
+			}
+
+			// White color of text
+			// white for dark photos
+			// default: black for light photos
+			// Only in `card` $scope.mode
+			&.white {
+				color: #FFF;
+			}
+
+			&.pink {
+				color: $pink;
+			}
+		}
+
+		// Information on card
+		.data {
+			position: absolute;
+			margin: 20px;
+
+			p.date {
+				position: relative;
+				
+				$size: 12px;
+
+				font-size: $size;
+				line-height: $size + 4;
+			}
+		}
+
+		.img-wrap {
+			overflow: hidden;
+			display: inline-block;
+
+			border-radius: 2px;
+
+			// Set height size for desktop
+			@media (#{$desktop}) {
+				max-height: $thumb-height-desktop - 20;
+			}
+			
+			// Set height size for large desktop
+			@media (#{$large-desktop}) {
+				max-height: $thumb-height-large-desktop - 20;
+			}
+		}
+	}
+
+	.view-as-text {
+
+		// Information on card
+		.data {
+
+			p {
+				display: inline-block;
+			}
+
+			p.date {
+				opacity: .7;
+				position: relative;
+				
+				$size: 10px;
+
+				margin-left: 10px;
+
+				font-size: $size;
+				line-height: $size + 2;
+			}
+		}
+	}
+
+	.big-type {
+		
+		@mixin fade-out-text-size($size) {
+
+			p.city {
+				font-size: $size;
+				line-height: $size;
+			}
+
+			p.date {
+				margin-left: $size - 24;
+			}
+		}
+
+		@for $i from 1 through 10 {
+			$size: 20 + $i; // 2
+			$year: 2005 + $i;
+
+			&.year-#{$year} {
+				@include fade-out-text-size(#{$size} + 'px');
+			}
+		}
+
+		transition: 0.3s;
+
+	}
+	
+	.year-header {
+		@include open-sans();
+		@include light();
+
+		color: $gray;
+	}
+
+	img {
+		width: 100%;
+	}
+}

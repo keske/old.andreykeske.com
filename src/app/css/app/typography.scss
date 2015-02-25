@@ -1,0 +1,81 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,800,700,600);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,800,700,600|Roboto+Slab:400,100,300,700&subset=latin,cyrillic-ext);
+
+@mixin serif-caption() {
+	font-family: 'Roboto Slab', serif;
+}
+
+@mixin open-sans() {
+	font-family: 'Open Sans', sans-serif;
+}
+
+@mixin light() {
+	font-weight: 300;
+}
+
+@mixin normal() {
+	font-weight: 400;
+}
+
+@mixin bold() {
+	font-weight: 700;
+}
+
+body {
+
+	// Default font
+	@include serif-caption();
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	@include serif-caption();
+}
+
+@mixin header($size) {
+	font-size: $size;
+
+	margin-top: $size;
+	margin-bottom: $size / 2;
+}
+
+h1 {
+	@include header(36px);
+}
+
+h2 {
+	@include header(28px);
+}
+
+h3 {
+	@include header(28px);
+}
+
+@mixin paragraph() {
+	@include light();
+
+	$size: 18px;
+
+	font-size: $size;
+	line-height: $size + 10;
+}
+
+p {
+	@include paragraph();
+}
+
+ul {
+
+	li {
+		@include paragraph();
+	}
+}
+
+small {
+	font-size: 12px;
+}

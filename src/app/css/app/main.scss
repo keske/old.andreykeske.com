@@ -1,0 +1,24 @@
+body {
+	 
+}
+
+a {
+	color: $blue;
+	text-decoration: none !important;
+
+	&:hover {
+		color: $red;
+	}
+
+	&:visited:hover {
+		color: $red;
+	}
+
+	&:visited {
+		color: $purple;
+	}
+}
+
+img {
+	width: 100%;
+}

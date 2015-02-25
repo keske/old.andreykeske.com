@@ -1,0 +1,132 @@
+<!doctype html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+
+	<meta name="keywords" content="andrey keske, andrey, keske, art, web design, web art, conceptual art, digital art, creative coding" />
+	<meta name="description" content="Andrey Keske conceptual artist, web designer and front-end developer" />
+	<meta name="author" content="Andrey Keske" />
+	<meta name="robots" content="index, follow, all" />
+
+	<title>mainWindow</title>
+	
+	<script src="js/jquery-1.8.2.js"></script>
+	<script src="js/jquery-ui-1.9.0.custom.js"></script>
+
+	<script type="text/javascript" src="js/shadow.js"></script>
+	<script type="text/javascript" src="js/sh.js"></script>
+	
+	<link href="css/ui-lightness/jquery-ui-1.9.0.custom.css" rel="stylesheet">
+	
+	<script type="text/javascript">
+
+		  	var _gaq = _gaq || [];
+		  	_gaq.push(['_setAccount', 'UA-10906656-5']);
+		  	_gaq.push(['_trackPageview']);
+
+		  	(function() {
+		    	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  	})();
+
+	</script>
+
+	<style type="text/css">
+		
+		body {
+			margin: 20px;
+			font-family: Verdana, serif;
+			font-size: 12px;
+			color: #444;
+			outline: none;
+		}
+		
+		h1 {
+			font-size: 16px;
+			margin-bottom: 15px;
+		}
+
+		p {
+			display: none;
+		}
+		
+		#slider {
+			width: 300px;
+			margin-left: 10px;
+			display: none;
+		}
+	
+	</style>
+	
+
+</head>
+
+<body>
+	
+	<h1>Window Shadow</h1>
+	
+	<input type="submit" onclick="_shadow_openShadowWindows()" value="Open Windows" />
+	
+	<br /><br />
+	
+	<p>Slide to change window shadow:</p>
+	
+	<script>
+	    $(function() {
+	
+	        var select = $( "#minbeds" );
+
+	        var slider = $( "<div id='slider'></div>" ).insertAfter( select ).slider({
+	            min: 1,
+	            max: 16,
+	            range: "min",
+	            value: select[ 0 ].selectedIndex + 1,
+	            slide: function( event, ui ) {
+	            
+	                select[ 0 ].selectedIndex = ui.value - 1;
+	                
+					_v = 16 - ui.value - 1;
+					
+	                for (var w = 1; w < _windows.length; w++) {	
+	                
+	                	_obj[w].resizeTo(_windows[w][0] - _v, _windows[w][1] - _v + 50);
+	                	_obj[w].moveTo((screen.width / 2) - ((_windows[w][0] - _v) / 2), (screen.height / 2) - ((_windows[w][1] - _v + 45) / 2));
+	              
+	                }
+			
+	            }
+	            
+	        });
+	        
+	        $( "#minbeds" ).change(function() {
+	        
+	            slider.slider( "value", this.selectedIndex + 1 );
+	            
+	            
+	        });
+	    });
+    </script>
+	
+	<form id="reservation">
+    <label for="minbeds" style="display: none;">Minimum number of beds</label>
+    <select name="minbeds" id="minbeds" style="display: none;">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+    </select>
+</form>
+	
+</body>
+
+</html>

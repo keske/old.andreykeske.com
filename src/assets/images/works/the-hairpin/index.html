@@ -1,0 +1,84 @@
+<!doctype html>
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+
+	<title>The Barrette</title>
+
+</head>
+
+<body>
+
+	<script src="../../../js/jquery.js" type="text/javascript"></script>
+  
+  <script>
+    
+    // the window
+    var win;
+    
+    // left and top positions
+    var 
+      // screen width (resolution)
+      screenWidth = window.screen.availWidth,
+      // screen height (resolution)
+      screenHeight = window.screen.availHeight,
+    
+      // size 
+      size = 300,
+      // window left position
+      x = (screenWidth / 2) - (size / 2),
+      // win top pos
+      y = 0,
+      
+      // move speed
+      speed = 33,
+      // add index
+      add = 10;
+      
+		// create and open
+		win = window.open("index.html", "windows", 
+    "width=300, height=10, status=no, toolbar=no, menubar=no");
+		
+    // counter
+    var c = 0; 
+    
+    var firstTimer, secondTimer;
+    
+    // move after load() window
+    $(window).load(function() {   
+      count();
+    });
+    
+    count = function() {  
+      
+      // after 5 sec move window
+      if ( c > 5 ) {
+         moveWindow();
+         firstTimer.clearInterval();
+      }
+      
+      // basic pos
+      win.moveTo(x, y);   
+      
+      document.title = c;
+      
+      c++;
+      
+      firstTimer = setTimeout(count, 1000);
+    }
+    
+    moveWindow = function() {
+      // move to x, y
+      win.moveTo(x, y);      
+      // check position, if ok move next
+      ( y < screenHeight ) ? secondTimer = setTimeout(moveWindow, speed) : secondTimer.clearTimeout();
+      
+      y = y + add;
+    }
+  
+  </script>
+
+</body>
+
+</html>

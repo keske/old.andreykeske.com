@@ -1,0 +1,26 @@
+header {
+	position: fixed;
+	z-index: 1;
+
+	top: 0;
+
+	width: 100%;
+
+	padding: 20px 0;
+
+	.header-nav {
+
+		a {
+			margin-right: 40px;
+		}
+	}
+
+	&:hover {
+		opacity: 1 !important;
+		background: rgba(255, 255, 255, .87);
+	}
+}
+
+.sub-header {
+	margin-top: 80px;
+}

@@ -1,0 +1,54 @@
+<div class="nav-footer container">
+
+	<div class="row">
+
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<a href="/#/travel" class="list-of-cities">
+				List of cities
+			</a>
+		</div>
+		
+		<a href="#/places/{{place.year}}/{{place.month}}/{{place.city}}" 
+			class="{{place.class}}"
+			ng-class="{'current-city': place.city == city && place.month == month}" 
+			ng-repeat="place in navPlaces | startFrom: min | limitTo: 6"
+			ng-if="place.cover">
+
+			<div class="col-md-2 col-lg-2 nav-block">
+				
+				<div class="data">
+					<p class="city">
+						{{place.city}}
+						<span class="new" ng-if="showNewLabel(place.date);">
+							New
+						</span>
+					</p>
+
+					<p class="date">
+						<span class="country">
+							{{place.country}}
+						</span>
+						<br />
+						{{showStartDateMonth(place.start, place.end)}}
+						<span ng-if="place.end">&mdash; {{place.end}}</span>
+						<span ng-hide="order = '-year'">{{place.year}}</span>
+					</p>
+				</div>
+
+				<img src="../assets/images/{{place.year}}/{{place.month}}/{{place.city | capitalize}}/thumb.jpg" 
+					alt="{{place.city}} | {{place.month}} | {{place.year}}">
+			</div>
+		</a>
+	
+	</div>
+</div>
+
+<!-- <footer class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <a href="/">
+                Home
+            </a>
+        </div>
+    </div>
+</footer> -->

@@ -1,0 +1,89 @@
+.nav-footer {
+
+	margin-top: 33px;
+
+	a.list-of-cities {
+		@include light();
+
+		margin-left: 20px;
+		margin-bottom: 20px;
+
+		display: inline-block;
+	}
+	
+	a {
+
+		&.current-city {
+			
+			.data p, .data .country {
+				// font-weight: 600 !important;
+				color: $black;
+			}
+		}
+		
+		&:hover {
+			// White color of text
+			// white for dark photos
+			// default: black for light photos
+			// Only in `card` $scope.mode
+			// color: $black;
+			color: $black;
+
+			&.white {
+				color: #FFF !important;
+			}
+			
+			&.pink {
+				color: $pink !important;
+			}
+
+			img {
+				display: block;
+			}
+		}
+
+		img {
+			display: none;
+		}
+
+		.nav-block {
+			overflow: hidden;
+			height: 230px;
+
+			border-radius: 2px;
+
+			// Information on card
+			.data {
+				position: absolute;
+				margin: 20px;
+
+				p.city {
+					@include serif-caption();
+					@include light();
+
+					$size: 18px;
+
+					font-size: $size;
+					line-height: $size + 4;
+				}
+
+				p.date {
+					position: relative;
+					
+					$size: 12px;
+
+					font-size: $size;
+					line-height: $size + 4;
+
+					@include open-sans();
+					@include light();
+
+					span.country {
+						@include normal();
+					}
+				}
+			}
+		}
+	}
+
+}
