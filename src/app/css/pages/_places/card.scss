@@ -87,7 +87,7 @@ $thumb-height-large-desktop: 590px;
 			color: $black;
 
 			&:hover {
-				color: $blue;
+				color: $red;
 			}
 
 			// White color of text
@@ -96,10 +96,27 @@ $thumb-height-large-desktop: 590px;
 			// Only in `card` $scope.mode
 			&.white {
 				color: #FFF;
+
+				&:hover {
+					color: $red;
+				}
 			}
 
 			&.pink {
 				color: $pink;
+			}
+
+			&.shadow {
+				color: #FFF;
+				text-shadow: 0 0 1px rgba(0, 0, 0, .7),
+					0 0 3px rgba(0, 0, 0, .7), 
+					0 0 10px rgba(0, 0, 0, .3),
+					0 0 30px rgba(0, 0, 0, .8);
+
+				&:hover {
+					text-shadow: none;
+					color: $red;
+				}
 			}
 		}
 

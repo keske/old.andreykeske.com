@@ -72,7 +72,7 @@ angular.module('whenihave.services')
 
 				"date": new Date('9/7/2014'),
 
-				"class": "pink",
+				"class": "shadow",
 
 				"cover": true,
 			}, {
@@ -100,7 +100,7 @@ angular.module('whenihave.services')
 
 				"date": new Date('10/17/2014'),
 
-				"class": "pink",
+				"class": "shadow",
 
 				"cover": true,
 			}, {
