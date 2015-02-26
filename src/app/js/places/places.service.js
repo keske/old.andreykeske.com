@@ -34,7 +34,7 @@ angular.module('whenihave.services')
 			},
 			// 2014
 			{
-				"city": "Špindlerŭv Mlýn",
+				"city": "Spindleruv Mlyn",
 				"country": "Czech Republic",
 				"start": "26 Dec",
 				"end": "28 Dec",
@@ -395,7 +395,7 @@ angular.module('whenihave.services')
 				"start": "Autumn",
 				"end": "",
 
-				"month": "September",
+				"month": "september",
 				"year": 2011,
 
 				"date": new Date('9/4/2011'),
@@ -409,7 +409,7 @@ angular.module('whenihave.services')
 				"start": "Autumn",
 				"end": "",
 
-				"month": "September",
+				"month": "september",
 				"year": 2011,
 
 				"date": new Date('9/4/2011'),
@@ -423,7 +423,7 @@ angular.module('whenihave.services')
 				"start": "Autumn",
 				"end": "",
 
-				"month": "September",
+				"month": "september",
 				"year": 2011,
 
 				"date": new Date('9/4/2011'),
@@ -437,7 +437,7 @@ angular.module('whenihave.services')
 				"start": "Autumn",
 				"end": "",
 
-				"month": "September",
+				"month": "september",
 				"year": 2011,
 
 				"date": new Date('9/4/2011'),
@@ -451,7 +451,7 @@ angular.module('whenihave.services')
 				"start": "Autumn",
 				"end": "",
 
-				"month": "September",
+				"month": "september",
 				"year": 2011,
 
 				"date": new Date('9/4/2011'),
