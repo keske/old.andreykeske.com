@@ -11,4 +11,10 @@ angular.module('whenihave.controllers')
 			return 2;
 		}
 
+    // Lazy load places
+    $scope.loadLimit = 2;
+    $scope.loadMorePlaces = function() {
+      $scope.loadLimit = $scope.loadLimit + 2;
+    }
+
 	}]);

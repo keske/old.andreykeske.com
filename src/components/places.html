@@ -1,4 +1,6 @@
-<div class="container places">
+<div class="container places" 
+	infinite-scroll="loadMorePlaces()"
+	infinite-scroll-distance="1">
 
 	<div class="sub-header">
         <h1>
@@ -17,7 +19,7 @@
 		
 		<div filter></div>
 
-		<div ng-repeat="place in places | orderBy: [order, '-date']" 
+		<div ng-repeat="place in places | orderBy: [order, '-date'] | limitTo: loadLimit" 
 			class="city-thumb col-xs-12 col-sm-12"
 			ng-class="{'col-md-6 col-lg-6': mode == 'card', 
 				'hide': !place.cover && mode == 'card',

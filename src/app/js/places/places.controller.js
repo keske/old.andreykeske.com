@@ -134,4 +134,10 @@ angular.module('whenihave.controllers')
 			}
 		}
 
+		// Lazy load places
+		$scope.loadLimit = 2;
+		$scope.loadMorePlaces = function() {
+			$scope.loadLimit = $scope.loadLimit + 2;
+		}
+
 	}]);

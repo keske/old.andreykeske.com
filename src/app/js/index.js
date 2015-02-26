@@ -4,7 +4,8 @@ angular.module('whenihave.directives', []);
 angular.module('whenihave.filters', []);
 
 angular.module('whenihave', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ngResource', 'ngRoute',
-    'ui.bootstrap', 'whenihave.controllers', 'whenihave.services', 'whenihave.directives', 'whenihave.filters'
+    'ui.bootstrap', 'whenihave.controllers', 'whenihave.services', 'whenihave.directives', 'whenihave.filters',
+    'infinite-scroll'
   ])
   .config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
 
