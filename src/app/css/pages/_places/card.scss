@@ -124,6 +124,8 @@ $thumb-height-large-desktop: 590px;
 
 			border-radius: 2px;
 
+			margin-bottom: 30px;
+
 			// Set height size for desktop
 			@media (#{$desktop}) {
 				max-height: $thumb-height-desktop - 20;
