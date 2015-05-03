@@ -48,7 +48,17 @@
 
 		.nav-block {
 			overflow: hidden;
+
+			//
 			height: 230px;
+
+			@media (#{$phone}) {
+				height: 100px;
+
+				img {
+					opacity: 0;
+				}
+			}
 
 			border-radius: 2px;
 
