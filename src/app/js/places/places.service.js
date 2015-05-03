@@ -476,7 +476,7 @@ angular.module('whenihave.services')
       },
       // 2010
       {
-        "city": "Tumen",
+        "city": "Saint Petersburg",
         "country": "Russia",
         "start": "1 Jan",
         "end": "2 Jan",
@@ -520,6 +520,20 @@ angular.module('whenihave.services')
       },
       // 2009
       {
+        "city": "Tumen",
+        "country": "Russia",
+        "start": "1 Jan",
+        "end": "2 Jan",
+
+        "month": "january",
+        "year": 2009,
+
+        "date": new Date('1/1/2009'),
+
+        "class": "",
+
+        "cover": false,
+      }, {
         "city": "Moscow",
         "country": "Russia",
         "start": "Summer",
