@@ -1,8 +1,10 @@
-# Andrey Keske
+# My site
 
 ### View online
-> [http://andreykeske.com/#/](http://andreykeske.com/#/)
+> [http://andreykeske.com/](http://andreykeske.com/)
 
+![](http://andreykeske.com/assets/images/git/travel.png)
+![](http://andreykeske.com/assets/images/git/works.png)
 
 ### Gulp
 `gulp build` to build project
