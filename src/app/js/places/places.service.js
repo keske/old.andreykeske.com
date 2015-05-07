@@ -4,6 +4,34 @@ angular.module('whenihave.services')
   .factory('Places', function() {
 
     var places = [{
+        "city": "Vatican City",
+        "country": "",
+        "start": "6 may",
+        "end": "",
+
+        "month": "may",
+        "year": 2015,
+
+        "date": new Date('5/5/2015'),
+
+        "class": "",
+
+        "cover": false,
+      }, {
+        "city": "Rome",
+        "country": "Italy",
+        "start": "5 may",
+        "end": "15 may",
+
+        "month": "may",
+        "year": 2015,
+
+        "date": new Date('5/5/2015'),
+
+        "class": "",
+
+        "cover": true,
+      }, {
         "city": "Prague",
         "country": "Czech Republic",
         "start": "4 Jan",
@@ -12,7 +40,7 @@ angular.module('whenihave.services')
         "month": "january",
         "year": 2015,
 
-        "date": new Date('2/4/2015'),
+        "date": new Date('1/4/2015'),
 
         "class": "",
 
