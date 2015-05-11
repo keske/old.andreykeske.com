@@ -75,7 +75,7 @@ angular.module('whenihave.controllers')
 		// then show label
 		$scope.showNewLabel = function(date) {
 			var
-			// Current date
+				// Current date
 				today = new Date(),
 				year = today.getFullYear(),
 				month = today.getMonth() + 1,

@@ -8,3 +8,15 @@ footer {
 
 	@include light();
 }
+
+@media (#{$desktop}) {
+  .bottom-on-photo {
+    position: relative;
+
+    margin-top: -300px;
+
+    a, p, span {
+      color: #FFF !important;
+    }
+  }
+}

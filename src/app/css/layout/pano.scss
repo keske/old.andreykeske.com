@@ -1,0 +1,18 @@
+// Pano
+
+// Vars
+$pano-height: 600px;
+
+// Pano component
+.pano {
+  height: $pano-height;
+
+  overflow: hidden;
+
+  img {
+    width: auto;
+    height: $pano-height;
+
+    position: relative;
+  }
+}

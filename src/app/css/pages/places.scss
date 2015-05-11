@@ -5,3 +5,28 @@
 .places {
 	margin-bottom: 300px;
 }
+
+.photo-sign {
+  width: 100%;
+
+  text-align: center;
+
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.top-page-city-name {
+  font-size: 72px;
+  color: #FFF;
+
+  &.on-image {
+    position: absolute;
+
+    top: 100px;
+    left: 10%;
+  }
+}
+
+.page-style {
+  position: absolute;
+}

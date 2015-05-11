@@ -2,8 +2,8 @@
 // Mixins, typography, palletes, etc
 // *****************************************************************************
 @import "app/mixins",
-		"app/typography",
-		"app/pallete";
+		    "app/typography",
+		    "app/pallete";
 
 // *****************************************************************************
 // Main (html, body, a, li, etc)
@@ -14,14 +14,15 @@
 // Layout elements
 // *****************************************************************************
 @import "layout/header",
-		"layout/header-image",
-		"layout/photo",
-		"layout/footer";
+		    "layout/header-image",
+		    "layout/photo",
+		    "layout/footer",
+        "layout/pano";
 
 // *****************************************************************************
 // Pages
 // *****************************************************************************
 @import "pages/index",
-		"pages/places",
-		"pages/works",
-		"pages/about";
+		    "pages/places",
+		    "pages/works",
+		    "pages/about";
