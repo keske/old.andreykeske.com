@@ -4,6 +4,20 @@ angular.module('whenihave.services')
   .factory('Places', function() {
 
     var places = [{
+        "city": "Ostia",
+        "country": "Italy",
+        "start": "11 may",
+        "end": "",
+
+        "month": "may",
+        "year": 2015,
+
+        "date": new Date('5/11/2015'),
+
+        "class": "",
+
+        "cover": false,
+      }, {
         "city": "Florence",
         "country": "Italy",
         "start": "10 may",

@@ -3,6 +3,9 @@
 
 	<p class="city">
 		{{place.city}}
+		<span class="new" ng-if="showNewLabel(place.date);">
+			New
+		</span>
 	</p>
 
 	<p class="date">
