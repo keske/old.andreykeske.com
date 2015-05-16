@@ -35,15 +35,16 @@ gulp.task('serve', ['watch'], function () {
   browserSyncInit([
     paths.tmp + '/serve',
     paths.src
-  ], [
-    paths.tmp + '/serve/{app,components}/css/**/*.css',
-    paths.src + '/{app,components}/js/**/*.js',
-    paths.src + 'src/assets/images/**/*',
-    paths.tmp + '/serve/*.html',
-    paths.tmp + '/serve/{app,components}/**/*.html',
-    paths.src + '/**/*.html',
-    paths.src + '/{app,components}/**/*.html'
   ]);
+  // ], [
+  //   paths.tmp + '/serve/{app,components}/css/**/*.css',
+  //   paths.src + '/{app,components}/js/**/*.js',
+  //   paths.src + 'src/assets/images/**/*',
+  //   paths.tmp + '/serve/*.html',
+  //   paths.tmp + '/serve/{app,components}/**/*.html',
+  //   paths.src + '/**/*.html',
+  //   paths.src + '/{app,components}/**/*.html'
+  // ]);
 });
 
 gulp.task('serve:dist', ['build'], function () {
