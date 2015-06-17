@@ -7,3 +7,12 @@ dist/
 .DS_Store
 */.DS_Store
 */**/.DS_Store
+
+e2e
+
+.bowerrc
+.editorconfig
+.jshintrc
+.yo-rc.json
+
+protractor.conf.js
