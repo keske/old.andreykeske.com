@@ -9,15 +9,15 @@
 }
 
 // Vars
-$thumb-height-desktop: 600px; 
-$thumb-height-large-desktop: 590px; 
+$thumb-height-desktop: 600px;
+$thumb-height-large-desktop: 700px;
 
 // Paragraph style
 @mixin paragraph() {
-	
+
 	// Typography, size, font-weight
 	.data {
-		
+
 		&.no-cover-no-link {
 			color: $gray;
 		}
@@ -49,7 +49,7 @@ $thumb-height-large-desktop: 590px;
 
 	span.new {
 		font-size: 10px;
-		
+
 		color: #FFF;
 		background: $green;
 
@@ -76,7 +76,7 @@ $thumb-height-large-desktop: 590px;
 		@media (#{$desktop}) {
 			height: $thumb-height-desktop;
 		}
-		
+
 		// Set height size for large desktop
 		@media (#{$large-desktop}) {
 			height: $thumb-height-large-desktop;
@@ -108,7 +108,7 @@ $thumb-height-large-desktop: 590px;
 			&.shadow {
 				color: #FFF;
 				text-shadow: 0 0 1px rgba(0, 0, 0, .7),
-					0 0 3px rgba(0, 0, 0, .7), 
+					0 0 3px rgba(0, 0, 0, .7),
 					0 0 10px rgba(0, 0, 0, .3),
 					0 0 30px rgba(0, 0, 0, .8);
 
@@ -126,7 +126,7 @@ $thumb-height-large-desktop: 590px;
 
 			p.date {
 				position: relative;
-				
+
 				$size: 12px;
 
 				font-size: $size;
@@ -146,7 +146,7 @@ $thumb-height-large-desktop: 590px;
 			@media (#{$desktop}) {
 				max-height: $thumb-height-desktop - 20;
 			}
-			
+
 			// Set height size for large desktop
 			@media (#{$large-desktop}) {
 				max-height: $thumb-height-large-desktop - 20;
@@ -166,7 +166,7 @@ $thumb-height-large-desktop: 590px;
 			p.date {
 				opacity: .7;
 				position: relative;
-				
+
 				$size: 10px;
 
 				margin-left: 10px;
@@ -178,7 +178,7 @@ $thumb-height-large-desktop: 590px;
 	}
 
 	.big-type {
-		
+
 		@mixin fade-out-text-size($size) {
 
 			p.city {
@@ -203,7 +203,7 @@ $thumb-height-large-desktop: 590px;
 		transition: 0.3s;
 
 	}
-	
+
 	.year-header {
 		@include open-sans();
 		@include light();
