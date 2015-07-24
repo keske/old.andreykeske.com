@@ -1,0 +1,104 @@
+var data = {
+	
+	"works": [
+	
+		{
+			"title": "Tell me what you want",
+			"link": "money.html", 
+			"img": "data/works/money/cover.jpg",
+			"count": "New"
+		},
+		
+		// {
+		// 			"title": "Social Constructor",
+		// 			"link": "#", 
+		// 			"img": "data/works/social-soncstructor/img/cover.jpg",
+		// 			"count": "Soon"
+		// 		},
+		
+		{
+			"title": "Tabs as the piano keys",
+			"link": "tabs-piano.html", 
+			"img": "data/works/tabs-piano/img/cover.jpg",
+			"count": ""
+		},
+		
+		// {
+		// 			"title": "Globalization",
+		// 			"link": "globalization.html", 
+		// 			"img": "data/works/globalization/cover.png",
+		// 			"count": "New"
+		// 		},
+				
+		{
+			"title": "Motivation",
+			"link": "motivation.html", 
+			"img": "data/works/motivation/cover.png",
+			"count": ""
+		},
+		
+		{
+			"title": "Censorship in the iOS 7",
+			"link": "censorship-in-ios7.html", 
+			"img": "data/works/censorship-in-ios7/cover.jpg",
+			"count": ""
+		},
+		
+		{
+			"title": "Hedgehog in the Fog",
+			"link": "hedgehog-in-the-fog.html", 
+			"img": "data/works/hedgehog-in-the-fog/cover.jpg",
+			"count": ""
+		},
+	
+		
+		{
+			"title": "Police Siren",
+			"link": "police.html", 
+			"img": "data/works/research/police-car/cover.jpg",
+			"count": ""
+		},
+
+		{
+			"title": "The Catch",
+			"link": "catch.html", 
+			"img": "data/works/catch/cover.jpg",
+			"count": ""
+		},
+		
+		{
+			"title": "Graphic works",
+			"link": "graphics.html", 
+			"img": "data/works/graphics/cover.jpg",
+			"count": "+Paralympic logo"
+		},
+		
+		{
+			"title": "Spectrum at the browser bar",
+			"link": "spectrum.html", 
+			"img": "data/works/spectrum/cover.jpg",
+			"count": ""
+		},
+		
+		{
+			"title": "Experiments",
+			"link": "research.html", 
+			"img": "data/works/research/cover.jpg",
+			"count": "+Rosette"
+		},
+		
+		{
+			"title": "Mac OS UI Games",
+			"link": "mac-os-ui-games.html", 
+			"img": "data/works/mac-os-ui-games/cover.jpg",
+			"count": ""
+		},
+		
+		{
+			"title": "Invisible icons on the iPad",
+			"link": "ipad-invisible-icons.html", 
+			"img": "data/works/invisible-icons/cover.jpg",
+			"count": ""
+		},
+
+]}

@@ -1,0 +1,60 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	overflow: hidden;
+	background: url('../img/back.png');
+	font-family: Helvetica;
+}
+
+@font-face{ 
+	font-family: 'WS';
+		src: url('fonts/websymbolsligaregular.eot');
+		src: url('fonts/websymbolsligaregular.eot?#iefix') format('embedded-opentype'),
+			 url('fonts/websymbolsligaregular.woff') format('woff'),
+			 url('fonts/websymbolsligaregular.ttf') format('truetype'),
+			 url('fonts/websymbolsligaregular.svg#WebSymbolsRegular') format('svg');
+}
+
+.leftSide {
+	display: none;
+	padding: 20px;
+	overflow: auto;
+	background: #000;
+	color: #FFF;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+.leftSide h2 {
+	font-size: 16px;
+	text-transform: uppercase;
+}
+
+.leftSide h3 {
+	color: #444;
+	font-size: 12px;
+}
+
+.content {
+	padding: 20px 40px;
+	width: 100%;
+	height: 100%;
+	overflow-y: auto;
+	text-align: center;
+	-webkit-overflow-scrolling: touch;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+.content .result {
+	height: 100px;
+}
+
+.content .result h1 {
+	font-size: 38px;
+	text-transform: uppercase;
+	color: #FFF;
+}

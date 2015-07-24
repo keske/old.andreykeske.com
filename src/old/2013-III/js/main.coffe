@@ -1,0 +1,17 @@
+$(document).ready ->
+  for a in [0...data.works.length]
+    l = data.works[a].length
+    for b in [0...l]
+      $('.span3:eq('+a+')').html data.works[a][b].link
+
+  
+
+make = () ->
+  
+  
+$(window).scroll ->
+  $(".filter div div").css('-webkit-transform', 'scale(10)')
+  console.log($(window).scrollTop())
+
+$(window).resize ->
+  make()

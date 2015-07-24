@@ -1,0 +1,52 @@
+html { }
+body {
+   	background-color: #FFF;
+    margin: 0px;
+    color: #444;
+    font-size: 24px;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cont {
+    position: fixed;
+    top: 70px;
+    left: 25px; width: 500px;
+    color: #444;
+}
+
+.cont a {
+    color: #CCC;
+}
+
+p {
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.forPlayer {
+    top: 10px;
+    left: 20px;
+    position: absolute;
+}
+
+.keskeInfo {
+    position: absolute;
+    top: 1px;
+    width: 400px;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.speaker {
+	margin-top: 0px;
+}
+
+.radius {
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	background-color: #FFF;
+	padding: 5px;
+}

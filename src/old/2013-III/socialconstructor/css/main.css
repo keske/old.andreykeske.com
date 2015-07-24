@@ -1,0 +1,125 @@
+html, body {
+	
+}
+
+body {
+	margin: 0;
+	font-family: Verdana;
+	font-size: 12px;
+	color: #444;
+	margin-top: 30px;
+	overflow: visible;
+}
+
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic);
+
+h1, h2, h3 {
+	font-family: 'PT Sans', sans-serif;
+	position: relative;
+	z-index: 999999999;
+/* 	display: none; */
+}
+
+h1 {
+	font-size: 28px;
+	letter-spacing: 5px;
+	text-align: center;
+	text-transform: uppercase;
+	margin-top: 70px;
+}
+
+h2 {
+	font-size: 14px;
+	letter-spacing: 2px;
+	text-align: center;
+	text-transform: uppercase;
+	margin-top: 30px;
+	margin-bottom: 90px;
+}
+
+h3 {
+	font-size: 12px;
+	letter-spacing: 2px;
+	text-align: center;
+	font-style: italic;
+	margin-top: 13px;
+}
+
+h1 i {
+	font-style: italic;
+	color: #999;
+}
+
+ul {
+	list-style: none;
+}
+
+li {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+
+.total-canvases, .total-authors {
+	font-weight: bold;
+}
+
+.col-lg-4 {
+	display: none;
+}
+
+.canvas {
+	background: #C3DBDB;
+	width: 700px;
+	height: 700px;
+	margin: 10px;	
+	position: absolute;
+	margin-bottom: 50px;
+	overflow: hidden;
+	margin-left: 15%;
+}
+
+.border {
+	box-shadow: inset 1px 1px 3px rgba(0, 0, 0, .5);
+	border: 10px solid #444;
+	width: 700px;
+	margin: 10px;
+	height: 700px;
+	position: absolute;
+	z-index: 9999;
+	margin-left: 15%;
+}
+
+.autors {
+	position: absolute;
+	margin-top: 727px;
+	margin-left: 10px;
+	padding-bottom: 70px;
+	margin-left: 15%;
+	font-family: 'PT Sans', sans-serif;
+	text-align: center;
+	width: 700px;
+	text-transform:uppercase;
+}
+
+.autors-list{
+ 	display: inline-block; 
+}
+
+	.autors a {
+		margin-left: 10px;
+	}
+	
+	.autors a span:first-child {
+		color: #000;
+		text-transform:none;
+	}
+
+.user {
+	
+}
+	.user a img {
+		display: none;
+	}
+	
+	

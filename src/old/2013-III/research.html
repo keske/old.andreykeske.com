@@ -1,0 +1,394 @@
+<!doctype html>
+
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+	<link rel="icon" href="img/favicon.png" type="image/png" />
+
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/bootstrap-responsive.css" rel="stylesheet">
+
+	<link rel="stylesheet/less" type="text/css" href="css/main.less">
+		
+	<title>Andrey Keske</title>
+	
+</head>
+
+<body>
+	
+	<!--[if lt IE 7]>
+		<p class="chromeframe">You are using an <strong>outdated</strong> browser. 
+		Please <a href="http://browsehappy.com/">upgrade your browser</a> or 
+		<a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> 
+		to improve your experience.</p>
+	<![endif]-->
+	
+	<canvas id="fft" height="0" style="position: absolute;"></canvas>
+	
+	<div class="loading"></div>
+	
+	<div class="logo">
+		<a href="index.html">	
+			<img src="img/logo.png" alt="Andrey Keske" />
+		</a>
+	</div>
+	
+	<header></header>
+	
+	<div class="sub-header">
+		<div class="container">
+			<div class="row">
+				<div class="half float">
+					<div class="site-title">
+						<i class="hidden-phone">
+							<a href="index.html">
+								Andrey Keske</a>
+							</i>
+					</div>
+				</div>
+				<div class="half float right">
+					<div class="icon-menu"></div>
+					<div class="icon-like"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="menu">
+		<div class="right">
+			<div class="menu-close">&#206;</div>
+		</div>
+		<div class="menu-scroll">
+			<h3>Works</h3>
+			<div class="menu-works"></div>
+			<hr />
+			<a href="about.html">About me</a><br />
+			<a href="cv.html">CV</a>
+		</div>
+	</div>
+	
+	<div class="site">
+		<div class="bigImage">
+			<div class="container"><h1>Reserch And Experiments</h1></div>
+			<img src="data/works/research/back.jpg" alt="Work" />
+		</div>
+	
+		<div class="container content">
+	    	<div class="row">
+				<div class="span12">
+					<div class="item work">
+						
+						<div class="anchorOffsetTop">
+							<h1 class="name_rosette"><sup><a href="#rosette" class="anchor">#</a></sup>Rosette for windows</h1>
+						</div>
+
+						<div class="only_img">
+							<img src="data/works/research/rosette/rosette.jpg" />
+						</div>
+						
+						<div class="hr"></div>
+						
+						<div class="anchorOffsetTop">
+							<h1 class="name_friday_dock"><sup><a href="#friday_dock" class="anchor">#</a></sup>Friday Dock</h1>
+						</div>
+
+						<h2>Normal</h2>
+						<div class="only_img">
+							<img src="data/works/research/friday-dock/normal.jpg" />
+						</div>
+						
+						<h2>Friday version</h2>
+						<div class="only_img">
+							<img src="data/works/research/friday-dock/friday-dock.jpg" />
+						</div>
+						
+						<div class="download">
+							<span class="link">
+								<a href="data/works/research/friday-dock/friday-apps.zip">
+									<div class="ws float">&#0040;</div> <div class="downloadLink float">Download friday apps (3Mb)</div>
+									<div class="clear"></div>
+									<div class="link_border"></div>
+								</a>
+							</span>
+						</div>
+						
+						<div class="hr"></div>
+						
+						<div class="anchorOffsetTop">
+							<h1 class="name_shadows"><sup><a href="#shadows" class="anchor">#</a></sup>The shadows of the window</h1>
+						</div>
+						<p>
+							I continue research and experiments with Mac OS interface. Now I work with shadows of the window.
+							<br />
+							Slider controls size of shadow.
+						</p>
+					
+						<span class="link" onclick="openWindows();">
+							<a href="#">
+								<span class="ws">&#0047;</span> Let's try this effect (You need Mac OS X and Google Chrome)
+								<div class="link_border"></div>
+							</a>
+						</span>
+						
+						<div class="slider slider_0">
+							<div class="slider_in">
+								<div class="one">
+									<img src="data/works/research/shadow/shadow.jpg" />
+								</div>
+							</div>
+							<div class="left" id="0"><span class="ws">&#210;</span></div>
+							<div class="right" id="0"><span class="ws">&#213;</span></div>
+							<div class="clear"></div>
+							<div class="playButton" data-html='<video class="video" autoplay controls poster="data/works/research/shadow/shadow.jpg"> 
+								<source src="data/works/research/shadow/shadow.mp4" type="video/mp4"> 
+								<source src="data/works/research/shadow/shadow.theora.ogv" type="video/ogg; codecs="theora, vorbis""/>
+							</video>'><img src="img/play.png" alt="Play"></div>
+						</div>
+						
+						<script type="text/javascript" src="data/works/research/shadow/slider/js/sh.js"></script>
+						
+						<script type="text/javascript">
+							openWindows = function() {
+							
+								_obj.push('_obj'+0);
+								_obj[0] = window.open("data/works/research/shadow/slider/mainWindow.html", "windows"+0, "width="+_windows[0][0]+", height="+_windows[0][1]+", left=10, top=10, status=no, toolbar=no, menubar=no");
+							}
+						</script>
+						
+						<div class="hr"></div>
+						
+						<div class="anchorOffsetTop">
+							<h1 class="name_like"><sup><a href="#like" class="anchor">#</a></sup>Like</h1>
+						</div>
+						
+						<h2>Empire</h2>
+						
+						<span class="link">
+							<a href="http://andreykeske.com/data/works/research/like/empire.andreykeske.com/" target="_blank">
+								<span class="ws">&#0047;</span> Open Empire State Building
+								<div class="link_border"></div>
+							</a>
+						</span>
+						
+						<div class="only_img">
+							<a href="http://andreykeske.com/data/works/research/like/empire.andreykeske.com/" target="_blank">
+								<img src="data/works/research/like/empire-state.jpg" alt="Empire State">
+							</a>
+						</div>
+						
+						<h2>Space invaders</h2>
+						
+						<span class="link">
+							<a href="http://andreykeske.com/data/works/research/like/spaceinvaders.andreykeske.com/" target="_blank">
+								<span class="ws">&#0047;</span> Open spaceinvaders
+								<div class="link_border"></div>
+							</a>
+						</span>
+						
+						<div class="only_img">
+							<a href="http://andreykeske.com/data/works/research/like/spaceinvaders.andreykeske.com/" target="_blank">
+								<img src="data/works/research/like/spaceinvaders.jpg" alt="Spaceinvaders">
+							</a>
+						</div>
+						
+						<div class="hr"></div>
+						
+						<div class="anchorOffsetTop">
+							<h1 class="name_keyhole"><sup><a href="#keyhole" class="anchor">#</a></sup>Keyhole</h1>
+						</div>
+						
+						<p>
+							<i>I really love snooping and you?</i>
+						</p>
+						
+						<div class="keyhole-girl keyhole-girl-center">
+							<img src="data/works/research/keyhole/girl.png" alt="Girl">
+						</div>
+						<div class="keyhole keyhole-center">
+							<img src="data/works/research/keyhole/keyhole.png" alt="Keyhole">
+						</div>					
+						
+						<div class="hr"></div>
+						
+						<div class="anchorOffsetTop">
+							<h1 class="name_water"><sup><a href="#water" class="anchor">#</a></sup>I Found Water On Mars</h1>
+						</div>
+						
+						<span class="link">
+							<a href="http://andreykeske.com/img/works/mars/mars.html" target="_blank">
+								<span class="ws">&#0047;</span> Open windows (Google Chrome)
+								<div class="link_border"></div>
+							</a>
+						</span>
+						
+						<div class="alignCenter">
+							<a href="data/works/research/water-on-mars/mars.html" target="_blank">
+								<img src="data/works/research/water-on-mars/water-on-mars.jpg" alt="Mars on water" />
+							</a>
+						</div>
+						
+						<div class="hr"></div>
+						
+						<div class="anchorOffsetTop">
+							<h1 class="name_volume"><sup><a href="#volume" class="anchor">#</a></sup>Volume Experiments</h1>
+						</div>
+						
+						<h2>Fade out Effect</h2>
+						
+						<p>
+							The idea is about the effect from real life: sound is louder when you are closer 
+							to the source and getting quiet when you are moving off. 
+							<br />
+							There is an audioplayer at the top of page. When you are scrolling down sound volume 
+							gets quiter just like in real life.
+						</p>
+						
+						<span class="link">
+							<a href="data/works/research/volume/volume.andreykeske.com/index.html" target="_blank">
+								<span class="ws">&#0047;</span> Open and scroll it
+								<div class="link_border"></div>
+							</a>
+						</span>
+						
+						<div class="alignCenter">
+							<a href="data/works/research/volume/volume.andreykeske.com/index.html" target="_blank">
+								<img src="data/works/research/volume/fade.jpg" alt="Fade out" />
+							</a>
+						</div>
+						
+						<h2>Resize volume</h2>
+						
+						<p>
+							Larger speaker can produce sound more loudly. In my experiment I use the same principle — 
+							larger the window louder the sound it produces and vice versa.
+						</p>
+						
+						<span class="link">
+							<a href="data/works/research/volume/resize.andreykeske.com/index.html" target="_blank">
+								<span class="ws">&#0047;</span> Open and resize window
+								<div class="link_border"></div>
+							</a>
+						</span>
+						
+						<div class="alignCenter">
+							<a href="data/works/research/volume/resize.andreykeske.com/index.html" target="_blank">
+								<img src="data/works/research/volume/resize.jpg" alt="Resize" />
+							</a>
+						</div>
+						
+						<div class="hr"></div>
+						
+						<div class="anchorOffsetTop">
+							<h1 class="name_close"><sup><a href="#close" class="anchor">#</a></sup>Close Favicon</h1>
+						</div>
+						
+						<p>Which button?</p>
+						
+						<span class="link">
+							<a href="data/works/research/close-favicon/index.html" target="_blank">
+								<span class="ws">&#0047;</span> 
+								Open in a new tab (of course to see this effect you should have Mac OS X with Google Chrome)
+								<div class="link_border"></div>
+							</a>
+						</span>
+						
+						<div class="alignCenter">
+							<img src="data/works/research/close-favicon/close.jpg" alt="Close favicon" />
+						</div>
+						
+						<div class="hr"></div>
+						
+						<div class="anchorOffsetTop">
+							<h1 class="name_desktop-background"><sup><a href="#desktop-background" class="anchor">#</a></sup>Desktop background in browser</h1>
+						</div>
+						
+						<p>
+							Imitation that window having a hole.
+							<br />
+							<i>Only HTML and JavaScript</i>
+						</p>
+						
+						<div class="download">
+							<span class="link">
+								<a href="data/works/research/chrome/source.html.zip">
+									<div class="ws float">&#0040;</div> <div class="downloadLink float">Download source (1Kb)</div>
+									<div class="clear"></div>
+									<div class="link_border"></div>
+								</a>
+							</span>
+						</div>
+						
+						<div class="slider slider_1">
+							<div class="slider_in">
+								<div class="one">
+									<img src="data/works/research/chrome/poster.jpg" />
+								</div>
+							</div>
+							
+							<div class="left" id="1"><span class="ws">&#210;</span></div>
+							<div class="right" id="1"><span class="ws">&#213;</span></div>
+							<div class="clear"></div>
+							<div class="playButton" data-html='<video class="video" autoplay controls poster="data/works/research/chrome/poster.jpg"> 
+								<source src="data/works/research/chrome/chrome_.mp4" type="video/mp4"> 
+								<source src="data/works/research/chrome/chrome.theora.ogv" type="video/ogg; codecs="theora, vorbis""/>
+							</video>'><img src="img/play.png" alt="Play"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+		<footer></footer>
+	</div>
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" type="text/javascript"></script>
+	
+	<script src="js/bootstrap.js" type="text/javascript"></script>
+	<script src="js/less.js" type="text/javascript"></script>
+	<script src="http://www.google.com/jsapi" type="text/javascript"></script>	
+	
+	<script src="data/andreykeske.json" type="text/javascript"></script>
+	<script src="js/main.js" type="text/javascript"></script>
+	
+	<div class="like-all">
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=517641041595103";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+		<div class="fb-like" data-href="http://andreykeske.com" data-send="false" 
+		data-layout="box_count" data-width="450" data-show-faces="false" style="margin-left: 3px !important"></div>
+		<br /><br />
+		<div style="margin-left: 28px !important">
+			<a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
+			if(!d.getElementById(id)){js=d.createElement(s);js.id=id;
+			js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}
+			(document, 'script', 'twitter-wjs');</script>
+		</div>
+	</div>
+	
+	<script>
+		var _gaq=[['_setAccount','UA-10906656-5'],['_trackPageview']];
+    	(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    	g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    	s.parentNode.insertBefore(g,s)}(document,'script'));
+	</script>
+	
+</body>
+
+</html>
