@@ -5,6 +5,10 @@ footer {
 	font-size: 12px;
 
   margin-bottom: 30px;
+
+  a {
+    margin: 0 5px;
+  }
 }
 
 @media (#{$desktop}) {

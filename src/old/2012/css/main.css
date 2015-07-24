@@ -1,0 +1,70 @@
+html {
+	font-size: 100%;
+}
+
+body {
+    background-color: #FFF;
+    font-family: Verdana, helvetica, serif;
+    margin: 20px;
+	color: #FFF;
+    font-size: 12px;
+    overflow: hidden;
+}
+
+/* new css file */
+
+.float { float: left; }
+.clear { clear: both; }
+
+a { color: #FFF; }
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: none;
+}
+
+.left-side {
+    width: 160px;
+}
+
+.right-side {
+    margin-left: 180px;
+    width: 1000px;
+}
+
+.to-home {
+    font-size: 11px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.projects {
+    margin-top: 20px;
+    color: #FFF;
+    font-size: 11px;
+}
+
+.projects a {
+    text-decoration: none;
+    border-bottom: 1px dotted #FFF;
+    padding-bottom: 1px;
+}
+
+.projects a:hover {
+    border-bottom: none;
+}
+
+.projects .about {
+    margin-top: 30px;
+}
+
+.for-likes {
+    margin-top: 30px;
+}
+
+.for-likes:hover {
+    margin-top: 30px;
+}

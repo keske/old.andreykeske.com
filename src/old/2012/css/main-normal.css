@@ -1,0 +1,176 @@
+html {
+	font-size: 100%;
+}
+
+body {
+    background-color: #FFF;
+    font-family: Verdana, helvetica, serif;
+    margin: 20px;
+	color: #444;
+    font-size: 12px;
+}
+
+/* new css file */
+
+.float { float: left; }
+.clear { clear: both; }
+
+a { color: #444; }
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: none;
+}
+
+.left-side {
+    width: 160px;
+    position: fixed;
+}
+
+.left-side-back {
+    width: 160px;
+    position: fixed;
+    color: #FFF;
+}
+
+.left-side-back a {
+    
+}
+
+
+.right-side {
+    margin-left: 200px;
+    width: 600px;
+    padding-top: 20px;
+}
+
+.right-side a {
+    color: #444;
+    text-decoration: none;
+    border-bottom: 1px solid #ffcccc;
+    padding-bottom: 1px;
+}
+
+.right-side a:hover {
+    border-bottom: none;
+}
+
+.to-home {
+    font-size: 11px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.projects {
+    margin-top: 20px;
+    color: #444;
+    font-size: 11px;
+}
+
+.projects a {
+    text-decoration: none;
+    border-bottom: 1px solid #ffcccc;
+    padding-bottom: 1px;
+}
+
+.projects a:hover {
+    border-bottom: none;
+}
+
+.projects .about {
+    margin-top: 30px;
+}
+
+.for-likes {
+    margin-top: 30px;
+	opacity: 0.4;
+}
+
+.for-likes:hover {
+    margin-top: 30px;
+	opacity: 1;
+}
+
+h1 {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+h2 {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.s10 { height: 10px; }
+.s20 { height: 20px; }
+
+.trash {
+    position: fixed;
+    display: none;
+}
+
+.project_icons-result {  }
+
+.project_icons-zoom {
+    margin-top: -860px;
+    margin-left: 129px;
+    display: none;
+}
+
+.contacts a {
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+.quote {
+    font-style: italic;
+    color: #666666;
+}
+
+.universe {
+    width: 400px;
+    height: 400px;
+    overflow: visible;
+}
+
+.galaxy {
+    width: 400px;
+    height: 1642px;
+    background-image: url(../works/galaxy.jpg);
+}
+
+.mainImage {
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    top: 0;
+}
+
+.imgMain-img {
+    width: 800px;
+}
+
+.slide-ipad {
+    width: 768px;
+    height: 1024px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.slide-ipad-stream {
+    width: 99999px;
+}
+
+.browserBackground {
+    cursor: pointer;
+    border-bottom: 1px solid #ffcccc;
+    padding-bottom: 1px;
+}
+
+.browserBackgroundBlock {
+    display: none;
+    font-family: Arial, Verdana, serif;
+}

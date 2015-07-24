@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="description" content="Andrey Keske">
+<meta name="author" content="Andrey Keske">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+
+<title>Andrey Keske</title>
+
+<link rel="stylesheet" type="text/css" href="../css/main-normal.css">
+<link rel="stylesheet" type="text/css" href="../css/normalize.css">
+
+<script type='text/javascript' src='../js/jquery-1.6.2.js'></script>
+<script type='text/javascript' src='../js/main.js'></script>
+
+</head>
+
+<style>
+    html { overflow-x: hidden; }
+    body {
+        margin: 0;
+        overflow-x: hidden;
+    }
+    .infinity {
+        color: #FFF;
+        font-size: 158px;
+        position: fixed;
+        top: 180px;
+        left: 120px;
+    }
+</style>
+
+<script type="text/javascript">
+    $(window).scroll(function() {
+        if ($(document).height() - $(window).height() <= $(window).scrollTop() + 50) {
+            $(window).scrollTop(0);
+        }
+    });
+</script>
+
+<body>
+    <div class="infinity">∞</div>
+    <img src="galaxy.jpg" alt="galaxy" />
+
+</body>
+
+</html>
