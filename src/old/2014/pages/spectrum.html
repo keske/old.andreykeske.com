@@ -1,0 +1,240 @@
+<!doctype html>
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="../img/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="../img/favicon.png" type="image/png" />
+
+  <link href="../css/bootstrap.css" rel="stylesheet">
+  <link href="../css/main.less" rel="stylesheet/less" >
+
+  <title>Andrey Keske | Spectrum at browser bar</title>
+
+</head>
+
+<body>
+
+  <header>
+    <div class="home">
+      <a href="../">Home</a>
+    </div>
+    <div class="menu-icon">
+      <div class="blocks">
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+      </div>
+    </div>
+    <div class="loading">
+      &#169;
+    </div>
+    <div class="menu">
+      <div class="wrap">
+        <div class="workslist"></div>
+        <div class="">
+          <p>
+            <a href="about.html">About</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="border"></div>
+
+  <div class="site">
+
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-10 photo">
+          <h1>Spectrum at browser bar</h1>
+          <p>
+            Usually we have feedback from browser bar, such as URL or its anchors, but in my experiment I try to show how typical browser bar will visualize sound spectrum.
+          </p>
+
+          <h2>Player</h2>
+          <div class="player">
+            <p>
+              <span class="liga play">Ù</span>
+              <span class="liga pause">Ü</span>
+            </p>
+          </div>
+
+          <a href="https://vimeo.com/40103163">Drawl — 18+</a>
+
+          <div class="responsive-container">
+            <iframe width="960" height="720" src="//www.youtube.com/embed/I1nMNR8ntHM" frameborder="0" allowfullscreen></iframe>
+          </div>
+
+          <p>
+            <i>Working only on the Google Chrome</i>
+          </p>
+
+          <canvas id="fft" height="0"></canvas>
+
+        </div>
+      </div>
+
+      <hr class="black dashed">
+
+      <div class="likeheart">❤</div>
+
+      <div class="row project">
+        <div class="col-md-7">
+
+          <div class="like">
+            <div id="fb-root"></div>
+            <script>(function(d, s, id) {
+              var js, fjs = d.getElementsByTagName(s)[0];
+              if (d.getElementById(id)) return;
+              js = d.createElement(s); js.id = id;
+              js.src = "//connect.facebook.net/ru_RU/all.js#xfbml=1&appId=517641041595103";
+              fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));</script>
+            <div class="fb-like" data-href="" data-width="The pixel width of the plugin" data-height="The pixel height of the plugin" data-colorscheme="light" data-layout="standard" data-action="like" data-show-faces="false" data-send="false"></div>
+          </div>
+          <div class="like">
+            <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+          </div>
+
+          <div class="like">
+            <div class="g-plusone" data-size="medium" data-annotation="inline" data-width="300"></div>
+            <script type="text/javascript">
+            (function() {
+              var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+              po.src = 'https://apis.google.com/js/plusone.js';
+              var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+            })();
+            </script>
+          </div>
+        </div>
+      </div>
+
+      <hr class="black">
+
+      <div class="row project">
+        <div class="col-md-10 photo">
+          <h2>Also I recommend:</h2>
+          <br />
+          <div class="onework">
+            <a href="volume.html">
+              </a><div class="row"><a href="volume.html">
+                <div class="col-md-3 photo col-md-offset-2">
+                  <img src="works/research/volume/cover.png">
+                </div>
+                </a><div class="col-md-6"><a href="volume.html">
+                  <div class="fresh">Fresh work</div>
+                  </a><h1><a href="volume.html">
+                    </a><a href="volume.html" class="name">Volume experiments</a>
+                  </h1>
+                  <p>Changing the volume level according to the provisions of window scrollbar or window size.</p>
+                  <div class="more">
+                    <a href="volume.html">More</a>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="row project navigation">
+        <div class="col-md-5">
+          <a href="#"></a>
+        </div>
+        <div class="col-md-5">
+          <a href="#"></a>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <script src="../js/jquery.js" type="text/javascript"></script>
+  <script src="../js/bootstrap.js" type="text/javascript"></script>
+  <script src="../js/less.js" type="text/javascript"></script>
+
+  <script src="../js/andreykeske.json" type="text/javascript"></script>
+  <script src="../js/main.js" type="text/javascript"></script>
+
+  <!-- Dancer.js -->
+  <!-- <script src="//www.google-analytics.com/ga.js"></script>
+  <script id="twitter-wjs" src="http://platform.twitter.com/widgets.js"></script>
+  <script id="facebook-jssdk" src="//connect.facebook.net/en_US/all.js#xfbml=1&amp;appId=517641041595103"></script> -->
+
+  <script src="works/spectrum/js/dancer.js"></script>
+  <script src="works/spectrum/js/support.js"></script>
+  <script src="works/spectrum/js/kick.js"></script>
+  <script src="works/spectrum/js/adapterWebkit.js"></script>
+  <script src="works/spectrum/js/adapterMoz.js"></script>
+  <script src="works/spectrum/js/adapterFlash.js"></script>
+  <script src="works/spectrum/js/fft.js"></script>
+
+  <!-- Demo stuff -->
+  <script src="works/spectrum/js/player.js"></script>
+
+  <script type="text/javascript">
+
+    window.location.hash = '';
+
+    var spectrum;
+    var _hashtag = '•'
+
+    function _main() {
+      dancer.bind('update', function() {
+
+        spectrum = dancer.getFrequency(1, 255);
+
+        for ( var i = 1; i < ((-spectrum * 5).toFixed(3) * -200).toFixed(0); i++ ) {
+
+          _hashtag += _hashtag;
+
+          window.location.hash = _hashtag;
+
+        }
+
+        _hashtag = '•';
+        window.location.hash = '';
+
+      })
+
+    }
+
+    $('.play').bind('click', function() {
+      // alert(1)
+      dancer.play();
+    });
+
+    $('.pause').bind('click', function() {
+      dancer.pause();
+    });
+
+  </script>
+
+  <script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-10906656-5']);
+    _gaq.push(['_setDomainName', 'andreykeske.com']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+  </script>
+
+</body>
+
+</html>

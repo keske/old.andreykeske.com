@@ -1,0 +1,215 @@
+<!doctype html>
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="../img/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="../img/favicon.png" type="image/png" />
+
+  <link href="../css/bootstrap.css" rel="stylesheet">
+  <link href="../css/main.less" rel="stylesheet/less" >
+
+  <title>Andrey Keske | The hairpin</title>
+
+</head>
+
+<body>
+
+  <header>
+    <div class="home">
+      <a href="../">Home</a>
+    </div>
+    <div class="menu-icon">
+      <div class="blocks">
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+      </div>
+    </div>
+    <div class="loading">
+      &#169;
+    </div>
+    <div class="menu">
+      <div class="wrap">
+        <div class="workslist"></div>
+        <div class="">
+          <p>
+            <a href="about.html">About</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="border"></div>
+
+  <div class="site">
+    <div class="container">
+      
+      <div class="row">
+        <div class="col-md-10 white">
+          <h1>The hairpin</h1>
+          
+          <p>
+            Surreal scene about the real hairpin which holds the window in OS X.
+          </p>
+          
+          <p>
+            Whatch the video:
+          </p>
+          
+          <div class="responsive-container">
+            <iframe width="960" height="540" src="//www.youtube.com/embed/zaWOPkX4IpY" frameborder="0" allowfullscreen></iframe>
+          </div>
+            
+          <h2>JS source:</h2>
+            
+<pre style='color:#000000;background:#ffffff; border: none; font-size: 12px'>
+<span style='color:#3f7f59; '>// the window</span>
+<span style='color:#7f0055; font-weight:bold; '>var</span> win;
+
+<span style='color:#3f7f59; '>// left and top positions</span>
+<span style='color:#7f0055; font-weight:bold; '>var</span> 
+  <span style='color:#3f7f59; '>// screen width (resolution)</span>
+  screenWidth = window.screen.availWidth,
+  <span style='color:#3f7f59; '>// screen height (resolution)</span>
+  screenHeight = window.screen.availHeight,
+
+  <span style='color:#3f7f59; '>// size </span>
+  size = 300,
+  <span style='color:#3f7f59; '>// window left position</span>
+  x = (screenWidth / 2) - (size / 2),
+  <span style='color:#3f7f59; '>// win top pos</span>
+  y = 0,
+
+  <span style='color:#3f7f59; '>// move speed</span>
+  speed = 33,
+  <span style='color:#3f7f59; '>// add index</span>
+  add = 10;
+
+<span style='color:#3f7f59; '>// create and open</span>
+win = window.open(<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>index.html</span><span style='color:#2a00ff; '>"</span>, <span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>windows</span><span style='color:#2a00ff; '>"</span>, 
+<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>width=300, height=10, status=no, toolbar=no, menubar=no</span><span style='color:#2a00ff; '>"</span>);
+
+<span style='color:#3f7f59; '>// counter</span>
+<span style='color:#7f0055; font-weight:bold; '>var</span> c = 0; 
+
+<span style='color:#7f0055; font-weight:bold; '>var</span> firstTimer, secondTimer;
+
+<span style='color:#3f7f59; '>// move after load() window</span>
+$(window).load(<span style='color:#7f0055; font-weight:bold; '>function</span>() {   
+  count();
+});
+
+count = <span style='color:#7f0055; font-weight:bold; '>function</span>() {  
+
+  <span style='color:#3f7f59; '>// after 5 sec move window</span>
+  <span style='color:#7f0055; font-weight:bold; '>if</span> ( c > 5 ) {
+     moveWindow();
+     firstTimer.clearInterval();
+  }
+
+  <span style='color:#3f7f59; '>// basic pos</span>
+  win.moveTo(x, y);   
+
+  document.title = c;
+
+  c++;
+
+  firstTimer = setTimeout(count, 1000);
+}
+
+moveWindow = <span style='color:#7f0055; font-weight:bold; '>function</span>() {
+  <span style='color:#3f7f59; '>// move to x, y</span>
+  win.moveTo(x, y);      
+  <span style='color:#3f7f59; '>// check position, if ok move next</span>
+  ( y &lt; screenHeight ) ? secondTimer = setTimeout(moveWindow, speed) : secondTimer.clearTimeout();
+
+  y = y + add;
+}
+          </pre>
+          
+        </div>
+      </div>
+
+
+      <hr class="black dashed">
+
+      <div class="likeheart">❤</div>
+
+      <div class="row project">
+        <div class="col-md-7">
+
+          <div class="like">
+            <div id="fb-root"></div>
+            <script>(function(d, s, id) {
+              var js, fjs = d.getElementsByTagName(s)[0];
+              if (d.getElementById(id)) return;
+              js = d.createElement(s); js.id = id;
+              js.src = "//connect.facebook.net/ru_RU/all.js#xfbml=1&appId=517641041595103";
+              fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));</script>
+            <div class="fb-like" data-href="" data-width="The pixel width of the plugin" data-height="The pixel height of the plugin" data-colorscheme="light" data-layout="standard" data-action="like" data-show-faces="false" data-send="false"></div>
+          </div>
+          <div class="like">
+            <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+          </div>
+
+          <div class="like">
+            <div class="g-plusone" data-size="medium" data-annotation="inline" data-width="300"></div>
+            <script type="text/javascript">
+            (function() {
+              var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+              po.src = 'https://apis.google.com/js/plusone.js';
+              var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+            })();
+            </script>
+          </div>
+        </div>
+      </div>
+
+      <hr class="black">
+
+      <div class="row project navigation">
+        <div class="col-md-5">
+          <a href="#"></a>
+        </div>
+        <div class="col-md-5">
+          <a href="#"></a>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <script src="../js/jquery.js" type="text/javascript"></script>
+  <script src="../js/bootstrap.js" type="text/javascript"></script>
+  <script src="../js/less.js" type="text/javascript"></script>
+
+  <script src="../js/andreykeske.json" type="text/javascript"></script>
+  <script src="../js/main.js" type="text/javascript"></script>
+  
+  <script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-10906656-5']);
+    _gaq.push(['_setDomainName', 'andreykeske.com']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+  </script>
+
+</body>
+
+</html>

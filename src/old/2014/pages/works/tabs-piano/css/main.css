@@ -1,0 +1,33 @@
+html, body {
+	margin: 0;
+	overflow: hidden;
+	color: #444;
+}
+
+.note {
+  margin: 20%;
+  text-align: center;
+  font-size: 70px;
+	line-height: 20px;
+}
+
+	.note p {
+		font-style: italic;
+		font-size: 22px;
+		color: #CCC;
+	}
+	
+.notes {
+	text-align: center;
+}
+
+	.notes a {
+		color: #999;
+		text-decoration: none;
+		padding-left: 3px;
+		padding-right: 3px;
+	}
+	
+	.notes a:hover {
+		color: #666;
+	}

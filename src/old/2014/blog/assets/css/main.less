@@ -1,0 +1,152 @@
+body {
+  margin: 0;
+}
+
+// main
+
+a {
+	// color: blue !important;
+}
+
+h1, h2, h3 {
+  margin-top: 50px !important;
+}
+
+p {
+  font-size: 18px;
+	small {
+		color: #999;
+		margin-left: 10px;
+	}
+}
+
+.float {
+  float: left;
+}
+
+.clear {
+	clear: both;
+}
+
+.half {
+  width: 50%;
+}
+
+.w-99 {
+  width: 99.7%;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.like {
+  margin: 77px 0;
+  text-align: center;
+  
+  #fb-root {
+    display: inline !important;
+  }
+}
+
+// images
+.replace-img {
+  margin: 77px 0;
+  
+  img {
+    width: 100%;
+  }
+  
+  &.no-margin {
+    margin: 0;
+  }
+  
+  &.full-width {
+    width: 100%;
+  }
+  
+  &.max-960 {
+    text-align: center;
+    
+    img {
+      max-width: 960px;
+    }
+  }
+  
+  &.max-1024 {
+    text-align: center;
+    
+    img {
+      max-width: 1024px;
+    }
+  }
+  
+  &.max-1280 {
+    text-align: center;
+    
+    img {
+      max-width: 1280px;
+    }
+  }
+  
+  &.max-1600 {
+    text-align: center;
+    img {
+      max-width: 1600px;
+    }
+  }
+}
+
+.for-960 {
+  @media (min-width: 1200px) {
+    h1, h2, h3, h4, p {
+      margin-left: 90px;
+    }
+  }
+
+}
+
+.fixed-head {
+  position: fixed;
+  z-index: 1;
+  
+  top: 0;
+  left: 0;
+  
+  width: 100%;
+  text-align: center;
+  
+  p {
+    font-size: 33px;
+    color: #FFF;
+    
+    margin-top: 10px;
+  }
+}
+
+// todo
+.tallinn-badge {
+  text-align: center;
+  margin-top: -150px;
+  
+  img {
+    border-radius: 100%
+  }
+}
+
+.tallinn-slow {
+  position: absolute;
+  // height: 999990px;
+  
+  top: 0;
+  left: 0;
+  
+  // overflow: hidden;
+  // border: 1px solid red;
+  
+  .wrap {
+    top: 0;
+    position: absolute;
+    width: 100%;
+  }
+}
