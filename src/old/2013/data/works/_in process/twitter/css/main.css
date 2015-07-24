@@ -1,0 +1,49 @@
+html {
+	
+}
+
+body {
+	font-family: "Verdana";
+	font-size: 12px;
+	margin-bottom: 100px;
+}
+
+.frame {
+	width: 900px;
+	height: 763px;
+	background: url('../img/frame_.png');
+}
+
+.canvas {
+	width: 766px;
+	height: 622px;
+	background: url('../img/canvas.jpg');
+	box-shadow: inset 1px 1px 3px #000;
+	margin-left: 67px;
+	margin-top: -694px;
+	overflow: hidden;
+	position: relative;
+}
+
+.border {
+	display: none;;
+	width: 766px;
+	height: 622px;
+	position: absolute;
+	box-shadow: inset 0 0 4px #000;
+	left: 75px;
+	top: 78px;
+	border: 1px solid black;
+	z-index: 100;
+	overflow: hidden;
+}
+
+.authors {
+	margin-top: 100px;
+	margin-left: 10px;
+}
+
+.authors a {
+	color: #999;
+	margin-right: 10px;
+}

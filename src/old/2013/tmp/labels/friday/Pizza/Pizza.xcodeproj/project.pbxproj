@@ -1,0 +1,471 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		955125B417173F8E002A2A4A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 955125B317173F8E002A2A4A /* Cocoa.framework */; };
+		955125BE17173F8E002A2A4A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 955125BC17173F8E002A2A4A /* InfoPlist.strings */; };
+		955125C017173F8E002A2A4A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 955125BF17173F8E002A2A4A /* main.m */; };
+		955125C417173F8E002A2A4A /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 955125C217173F8E002A2A4A /* Credits.rtf */; };
+		955125C717173F8E002A2A4A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 955125C617173F8E002A2A4A /* AppDelegate.m */; };
+		955125CA17173F8F002A2A4A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 955125C817173F8F002A2A4A /* MainMenu.xib */; };
+		955125D217173F8F002A2A4A /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 955125D117173F8F002A2A4A /* SenTestingKit.framework */; };
+		955125D317173F8F002A2A4A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 955125B317173F8E002A2A4A /* Cocoa.framework */; };
+		955125DB17173F8F002A2A4A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 955125D917173F8F002A2A4A /* InfoPlist.strings */; };
+		955125DE17173F8F002A2A4A /* PizzaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 955125DD17173F8F002A2A4A /* PizzaTests.m */; };
+		955125E817173FAB002A2A4A /* ico.icns in Resources */ = {isa = PBXBuildFile; fileRef = 955125E717173FAB002A2A4A /* ico.icns */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		955125D417173F8F002A2A4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 955125A817173F8E002A2A4A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 955125AF17173F8E002A2A4A;
+			remoteInfo = Pizza;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		955125B017173F8E002A2A4A /* Pizza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pizza.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		955125B317173F8E002A2A4A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		955125B617173F8E002A2A4A /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		955125B717173F8E002A2A4A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		955125B817173F8E002A2A4A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		955125BB17173F8E002A2A4A /* Pizza-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Pizza-Info.plist"; sourceTree = "<group>"; };
+		955125BD17173F8E002A2A4A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		955125BF17173F8E002A2A4A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		955125C117173F8E002A2A4A /* Pizza-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pizza-Prefix.pch"; sourceTree = "<group>"; };
+		955125C317173F8E002A2A4A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		955125C517173F8E002A2A4A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		955125C617173F8E002A2A4A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		955125C917173F8F002A2A4A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		955125D017173F8F002A2A4A /* PizzaTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PizzaTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		955125D117173F8F002A2A4A /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		955125D817173F8F002A2A4A /* PizzaTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PizzaTests-Info.plist"; sourceTree = "<group>"; };
+		955125DA17173F8F002A2A4A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		955125DC17173F8F002A2A4A /* PizzaTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PizzaTests.h; sourceTree = "<group>"; };
+		955125DD17173F8F002A2A4A /* PizzaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PizzaTests.m; sourceTree = "<group>"; };
+		955125E717173FAB002A2A4A /* ico.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = ico.icns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		955125AD17173F8E002A2A4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				955125B417173F8E002A2A4A /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		955125CC17173F8F002A2A4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				955125D217173F8F002A2A4A /* SenTestingKit.framework in Frameworks */,
+				955125D317173F8F002A2A4A /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		955125A717173F8E002A2A4A = {
+			isa = PBXGroup;
+			children = (
+				955125E717173FAB002A2A4A /* ico.icns */,
+				955125B917173F8E002A2A4A /* Pizza */,
+				955125D617173F8F002A2A4A /* PizzaTests */,
+				955125B217173F8E002A2A4A /* Frameworks */,
+				955125B117173F8E002A2A4A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		955125B117173F8E002A2A4A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				955125B017173F8E002A2A4A /* Pizza.app */,
+				955125D017173F8F002A2A4A /* PizzaTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		955125B217173F8E002A2A4A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				955125B317173F8E002A2A4A /* Cocoa.framework */,
+				955125D117173F8F002A2A4A /* SenTestingKit.framework */,
+				955125B517173F8E002A2A4A /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		955125B517173F8E002A2A4A /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				955125B617173F8E002A2A4A /* AppKit.framework */,
+				955125B717173F8E002A2A4A /* CoreData.framework */,
+				955125B817173F8E002A2A4A /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		955125B917173F8E002A2A4A /* Pizza */ = {
+			isa = PBXGroup;
+			children = (
+				955125C517173F8E002A2A4A /* AppDelegate.h */,
+				955125C617173F8E002A2A4A /* AppDelegate.m */,
+				955125C817173F8F002A2A4A /* MainMenu.xib */,
+				955125BA17173F8E002A2A4A /* Supporting Files */,
+			);
+			path = Pizza;
+			sourceTree = "<group>";
+		};
+		955125BA17173F8E002A2A4A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				955125BB17173F8E002A2A4A /* Pizza-Info.plist */,
+				955125BC17173F8E002A2A4A /* InfoPlist.strings */,
+				955125BF17173F8E002A2A4A /* main.m */,
+				955125C117173F8E002A2A4A /* Pizza-Prefix.pch */,
+				955125C217173F8E002A2A4A /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		955125D617173F8F002A2A4A /* PizzaTests */ = {
+			isa = PBXGroup;
+			children = (
+				955125DC17173F8F002A2A4A /* PizzaTests.h */,
+				955125DD17173F8F002A2A4A /* PizzaTests.m */,
+				955125D717173F8F002A2A4A /* Supporting Files */,
+			);
+			path = PizzaTests;
+			sourceTree = "<group>";
+		};
+		955125D717173F8F002A2A4A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				955125D817173F8F002A2A4A /* PizzaTests-Info.plist */,
+				955125D917173F8F002A2A4A /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		955125AF17173F8E002A2A4A /* Pizza */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 955125E117173F8F002A2A4A /* Build configuration list for PBXNativeTarget "Pizza" */;
+			buildPhases = (
+				955125AC17173F8E002A2A4A /* Sources */,
+				955125AD17173F8E002A2A4A /* Frameworks */,
+				955125AE17173F8E002A2A4A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pizza;
+			productName = Pizza;
+			productReference = 955125B017173F8E002A2A4A /* Pizza.app */;
+			productType = "com.apple.product-type.application";
+		};
+		955125CF17173F8F002A2A4A /* PizzaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 955125E417173F8F002A2A4A /* Build configuration list for PBXNativeTarget "PizzaTests" */;
+			buildPhases = (
+				955125CB17173F8F002A2A4A /* Sources */,
+				955125CC17173F8F002A2A4A /* Frameworks */,
+				955125CD17173F8F002A2A4A /* Resources */,
+				955125CE17173F8F002A2A4A /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				955125D517173F8F002A2A4A /* PBXTargetDependency */,
+			);
+			name = PizzaTests;
+			productName = PizzaTests;
+			productReference = 955125D017173F8F002A2A4A /* PizzaTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		955125A817173F8E002A2A4A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Andrey Keske";
+			};
+			buildConfigurationList = 955125AB17173F8E002A2A4A /* Build configuration list for PBXProject "Pizza" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 955125A717173F8E002A2A4A;
+			productRefGroup = 955125B117173F8E002A2A4A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				955125AF17173F8E002A2A4A /* Pizza */,
+				955125CF17173F8F002A2A4A /* PizzaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		955125AE17173F8E002A2A4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				955125BE17173F8E002A2A4A /* InfoPlist.strings in Resources */,
+				955125C417173F8E002A2A4A /* Credits.rtf in Resources */,
+				955125CA17173F8F002A2A4A /* MainMenu.xib in Resources */,
+				955125E817173FAB002A2A4A /* ico.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		955125CD17173F8F002A2A4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				955125DB17173F8F002A2A4A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		955125CE17173F8F002A2A4A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		955125AC17173F8E002A2A4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				955125C017173F8E002A2A4A /* main.m in Sources */,
+				955125C717173F8E002A2A4A /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		955125CB17173F8F002A2A4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				955125DE17173F8F002A2A4A /* PizzaTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		955125D517173F8F002A2A4A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 955125AF17173F8E002A2A4A /* Pizza */;
+			targetProxy = 955125D417173F8F002A2A4A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		955125BC17173F8E002A2A4A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				955125BD17173F8E002A2A4A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		955125C217173F8E002A2A4A /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				955125C317173F8E002A2A4A /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		955125C817173F8F002A2A4A /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				955125C917173F8F002A2A4A /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		955125D917173F8F002A2A4A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				955125DA17173F8F002A2A4A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		955125DF17173F8F002A2A4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		955125E017173F8F002A2A4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		955125E217173F8F002A2A4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pizza/Pizza-Prefix.pch";
+				INFOPLIST_FILE = "Pizza/Pizza-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		955125E317173F8F002A2A4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pizza/Pizza-Prefix.pch";
+				INFOPLIST_FILE = "Pizza/Pizza-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		955125E517173F8F002A2A4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Pizza.app/Contents/MacOS/Pizza";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pizza/Pizza-Prefix.pch";
+				INFOPLIST_FILE = "PizzaTests/PizzaTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		955125E617173F8F002A2A4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Pizza.app/Contents/MacOS/Pizza";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pizza/Pizza-Prefix.pch";
+				INFOPLIST_FILE = "PizzaTests/PizzaTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		955125AB17173F8E002A2A4A /* Build configuration list for PBXProject "Pizza" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				955125DF17173F8F002A2A4A /* Debug */,
+				955125E017173F8F002A2A4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		955125E117173F8F002A2A4A /* Build configuration list for PBXNativeTarget "Pizza" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				955125E217173F8F002A2A4A /* Debug */,
+				955125E317173F8F002A2A4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		955125E417173F8F002A2A4A /* Build configuration list for PBXNativeTarget "PizzaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				955125E517173F8F002A2A4A /* Debug */,
+				955125E617173F8F002A2A4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 955125A817173F8E002A2A4A /* Project object */;
+}

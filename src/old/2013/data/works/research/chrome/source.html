@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+<title>Desktop background image in browser</title>
+
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js'></script>
+
+<style>
+    body { margin: 0; overflow: hidden; }
+</style>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+
+        /* Resize image */
+        $('.backgroundImage')
+            .css('width', screen.width);
+
+        position();
+
+        function position() {
+            /* Window left position */
+            var xWindowPosition = window.screenX;
+
+            /* Window top position */
+            var yWindowPosition = window.screenY;
+
+            /* Google Chrome Header Height */
+            var browserHeaderHeight = 72;
+
+            /* Position image */
+            $('.backgroundImage')
+                .css('marginTop', yWindowPosition * -1 - browserHeaderHeight)
+                .css('marginLeft', xWindowPosition * -1);
+
+            setTimeout(position, 25);
+        }
+    });
+</script>
+
+</head>
+
+<body>
+    <img src="path-to-file" alt="backgroundImage" class="backgroundImage"/>
+</body>
+
+</html>

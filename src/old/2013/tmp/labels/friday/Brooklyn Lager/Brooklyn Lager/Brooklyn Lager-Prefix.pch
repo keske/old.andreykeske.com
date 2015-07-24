@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'Brooklyn Lager' target in the 'Brooklyn Lager' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif

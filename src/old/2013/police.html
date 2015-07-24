@@ -1,0 +1,304 @@
+<!doctype html>
+
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+	<link rel="icon" href="img/favicon.png" type="image/png" />
+
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/bootstrap-responsive.css" rel="stylesheet">
+
+	<link rel="stylesheet/less" type="text/css" href="css/main.less">
+	
+	<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Serif:400italic' rel='stylesheet' type='text/css'>
+	
+	<title>Andrey Keske</title>
+	
+	<style type="text/css">
+		body, header {
+			background: #000;
+		}
+		.item {
+			margin-top: 15px;
+			border-radius: 3px;
+		}
+		.span3 .item {
+			border-radius: 3px !important;
+			padding-top: 10px;
+		}
+		header .item {
+			box-shadow: 0 0 13px rgba(255, 255, 255, 1), 
+				3px 3px 3px rgba(255, 255, 255, 0.7),
+				-3px -3px 3px rgba(255, 255, 255, 0.7),
+				3px -3px 3px rgba(255, 255, 255, 0.7),
+				-3px 3px 3px rgba(255, 255, 255, 0.7) !important;
+		}
+		.h1_white {
+			color: #FFF;
+			margin-top: 10px;
+			margin-bottom: 3px;
+		}
+		header .h1_white {
+			text-shadow: 
+				0 0 1px rgba(255, 255, 255, 0.1), 
+				1px 1px 1px rgba(255, 255, 255, 0.1),
+				-1px -1px 1px rgba(255, 255, 255, 0.1),
+				0 0 3px rgba(255, 255, 255, 0.7), 
+				3px 3px 3px rgba(255, 255, 255, 0.1),
+				-3px -3px 3px rgba(255, 255, 255, 0.1),
+				1px -1px 1px rgba(255, 255, 255, 0.1),
+				-1px 1px 1px rgba(255, 255, 255, 0.1),
+				2px 2px 2px rgba(255, 255, 255, 0.1),
+				2px 2px 2px rgba(255, 255, 255, 0.1),
+				2px -2px 2px rgba(255, 255, 255, 0.1),
+				-2px 2px 2px rgba(255, 255, 255, 0.1),
+				3px -3px 3px rgba(255, 255, 255, 0.1),
+				-3px 3px 3px rgba(255, 255, 255, 0.1),
+				2px 2px 2px rgba(255, 255, 255, 0.1),
+				2px 2px 2px rgba(255, 255, 255, 0.1),
+				2px -2px 2px rgba(255, 255, 255, 0.1),
+				-2px 2px 2px rgba(255, 255, 255, 0.1);
+			color: rgba(255, 255, 255, 0.01);
+			opacity: 0.9;
+		}
+		li .link, .intro .link {
+			margin-bottom: 13px !important;
+			margin-left: -2px !important;
+			padding-left: 0 !important;
+			margin-right: -2px !important;
+			padding-right: 0 !important;
+			padding-top: 3px !important;
+		}
+		li .link_border, .intro .link_border {
+			padding-bottom: 0;
+			margin-bottom: -23px;
+		}
+	</style>
+	
+</head>
+
+<body>
+	
+	<!--[if lt IE 7]>
+		<p class="chromeframe">You are using an <strong>outdated</strong> browser. 
+		Please <a href="http://browsehappy.com/">upgrade your browser</a> or 
+		<a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> 
+		to improve your experience.</p>
+	<![endif]-->
+	
+	<canvas id="fft" height="0" style="position: absolute;"></canvas>
+	
+	<div class="loading"></div>
+	
+	<div class="logo">
+		<a href="index.html">	
+			<img src="img/logo.png" alt="Andrey Keske" />
+		</a>
+	</div>
+	
+	<header></header>
+	
+	<div class="sub-header">
+		<div class="container">
+			<div class="row">
+				<div class="span12 right">
+					<div class="icon-menu"></div>
+					<div class="icon-like"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="menu">
+		<div class="right">
+			<div class="menu-close">&#206;</div>
+		</div>
+		<div class="menu-scroll">
+			<h3>Works</h3>
+			<div class="menu-works"></div>
+			<hr />
+			<a href="about.html">About me</a>
+		</div>
+	</div>
+	
+	<div class="like-all">
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=517641041595103";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+			
+		<div class="fb-like" data-href="http://andreykeske.com" data-send="false" data-layout="box_count" data-width="450" data-show-faces="false" style="margin-left: 3px !important"></div>
+			
+			<br /><br />
+			
+		<div style="margin-left: 28px !important">
+			<a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+		</div>
+	</div>
+	
+	<div class="site">
+		<br /><br /><br />
+		<div class="container content">
+	    	<div class="row">
+				<div class="span12">
+					<div class="item work">
+						
+						<div class="anchorOffsetTop">
+							<h1>Police Siren Alarm animation in OS X Finder</h1>
+						</div>
+						
+						<div class="intro">
+							I really love OS X and every day i get an inspiration working with this system
+							<i>(
+								<span class="link">
+									<a href="http://andreykeske.com/catch.html">
+										The Catch
+									<div class="link_border"></div></a>
+								</span>
+							,&nbsp;
+								<span class="link">
+									<a href="http://andreykeske.com/mac-os-ui-games.html">
+										Mac OS UI Games
+									<div class="link_border"></div></a>
+								</span>
+							,&nbsp;
+								<span class="link">
+									<a href="http://andreykeske.com/research.html#friday_dock">
+										Friday Dock
+									<div class="link_border"></div></a>
+								</span>
+							)</i>
+						</div>
+
+						<p>
+							As you know the OS X gives the opportunity to set image folder as background and set colour labels for folders and files. 
+							Also that can be done from Terminal. What if we make animation from this labels?
+						</p>
+						
+						<script type="text/javascript">
+							var color = 'red';
+							
+							action();
+							
+							function action()  {
+
+								if ( color != 'red' ) {
+									color = 'red';
+									//$('body').css('box-shadow', 'inset 23px 0 13px red');
+									//$('header').css('box-shadow', 'inset 23px 0 13px red');
+									//$('.site').removeClass('bBlue').addClass('bRed')
+									
+								} else {
+									color = 'blue';
+									//$('.site').removeClass('bRed').addClass('bBlue')
+								}
+									
+								$('.police').find('img').attr('src', 'data/works/research/police-car/' + color + '.jpg');
+								$('header').find('.police').find('img').attr('src', 'data/works/research/police-car/' + color + '-blur.jpg');
+								
+								setTimeout(action, 1000);
+							}
+						</script>
+						
+						<div class="police">
+							<img src="data/works/research/police-car/red.jpg" alt="Police">
+						</div>
+
+						<h2>How it's works:</h2>
+						<p>
+							So, how to set it up: open index.html in your browser, 
+							it has Javascript sending request to cmd.php every 2.5 seconds, which actually does the command.
+							The command is pretty simple and looks like <i>./label.sh [color] [file].</i>
+							<br />
+							File label.sh sets the Finder labels.
+						</p>
+						
+						<div class="slider slider_0">
+							<div class="slider_in">
+								<div class="one">
+									<img src="data/works/research/police-car/screen.jpg" />
+								</div>
+							</div>
+							<div class="left" id="0"><span class="ws">&#210;</span></div>
+							<div class="right" id="0"><span class="ws">&#213;</span></div>
+							<div class="clear"></div>
+							<div class="playButton" data-html='<video class="video" autoplay controls
+								poster="data/works/research/police-car/screen.jpg"> 
+								<source src="data/works/research/police-car/police.mp4" type="video/mp4"> 
+								<source src="data/works/research/police-car/police.oggtheora.ogv" type="video/ogg; codecs="theora, vorbis""/>
+							</video>'><img src="img/play.png" alt="Play"></div>
+						</div>
+						
+						<h2>Repeat this effect on your computer:</h2>
+						<p><i>
+							System requirements: OS X, Apache, PHP
+						</i></p>
+						<ul>
+							<li>
+								<span class="link">
+									<a href="http://andreykeske.com/data/works/research/police-car/police.zip">
+										Download (2.1 Mb)
+									<div class="link_border"></div></a>
+								</span>
+									archive and unzip
+							</li>
+							<li>Move the police folder in 
+								<span class="link">
+									<a href="http://httpd.apache.org/docs/2.2/mod/core.html#documentroot">
+										&laquo;DocumentRoot&raquo; folder
+									<div class="link_border"></div></a>
+								</span>
+							</li>
+							<li>
+								Open the police folder where there is two folders with &laquo;,,,,,,,,,,&raquo; and &laquo;,,,,,,,,,,,&raquo;. 
+								Set image as background, press &#8984;J. Select police.jpg.
+							</li>
+							<li>Start http server</li>
+							<li>Open in <img src="data/works/research/police-car/finder.jpg" alt="Finder" />Finder the police folder and change view option to &laquo;Show items as icons&raquo; (Press &#8984;1)</li>
+							<li>In the browser open your link to the police folder (for example: http://localhost/police)</li>
+							<li>And last, press Alt+Tab to show finder window with our police folder.</li>
+						</ul>
+						
+					</div>
+				</div>
+			</div>
+		</div>	
+		<footer></footer>
+	</div>
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" type="text/javascript"></script>
+	
+	<script src="js/bootstrap.js" type="text/javascript"></script>
+	<script src="js/less.js" type="text/javascript"></script>
+	<script src="http://www.google.com/jsapi" type="text/javascript"></script>	
+	
+	<script src="data/andreykeske.json" type="text/javascript"></script>
+	<script src="js/main.js" type="text/javascript"></script>
+	
+	<script>
+		var _gaq=[['_setAccount','UA-10906656-5'],['_trackPageview']];
+    	(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    	g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    	s.parentNode.insertBefore(g,s)}(document,'script'));
+	</script>
+	
+</body>
+
+</html>

@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'Second Pack' target in the 'Second Pack' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
