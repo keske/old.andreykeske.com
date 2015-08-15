@@ -3,8 +3,8 @@
 ### View online
 > [http://andreykeske.com/](http://andreykeske.com/)
 
-![](http://andreykeske.com/assets/images/git/travel.png)
-![](http://andreykeske.com/assets/images/git/works.png)
+![](http://andreykeske.com/#/experiment-works)
+![](https://raw.githubusercontent.com/keske/andreykeske.com/master/src/assets/images/gh/works.png)
 
 ### Gulp
 `gulp build` to build project
