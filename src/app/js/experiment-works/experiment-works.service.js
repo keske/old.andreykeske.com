@@ -6,6 +6,14 @@ angular.module('whenihave.services')
 		var works = [
 
 			{
+				"title": "Black hole",
+				"link": "black-hole.html",
+				"img": "assets/images/works/black-hole/cover.png",
+				"info": "In the space of my Desktop was noticed a black hole where the any information or object will be removed forever.",
+				"count": "New"
+			},
+
+			{
 				"title": "The Shell Game",
 				"link": "the-shell-game.html",
 				"img": "assets/images/works/the-shell-game/cover.png",

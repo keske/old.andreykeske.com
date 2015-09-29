@@ -178,6 +178,7 @@ $thumb-height-large-desktop: 700px;
 	}
 
 	.big-type {
+		display: none;
 
 		@mixin fade-out-text-size($size) {
 
