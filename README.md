@@ -1,5 +1,7 @@
 # My site
 
+> Note: this is old repository of my site, now I use  [https://github.com/keske/2015.andreykeske.com](https://github.com/keske/2015.andreykeske.com)
+
 ### View online
 > [http://andreykeske.com/](http://andreykeske.com/)
 
